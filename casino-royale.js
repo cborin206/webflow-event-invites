@@ -1778,7 +1778,7 @@ Bloomerang.Data.PayPal.IsPayPalPaymentMethodVaultingEnabled = false;Bloomerang.D
 
       '.btn-submit-registration,',
       'input.btn-submit-registration {',
-      '  background: linear-gradient(45deg, #d852a8 0%, #063ba7 100%) !important;',
+      '  background: #063ba7 !important;',
       '  color: #ffffff !important;',
       '  font-family: "Inter", sans-serif !important;',
       '  font-size: 1.05rem !important;',
@@ -1799,8 +1799,8 @@ Bloomerang.Data.PayPal.IsPayPalPaymentMethodVaultingEnabled = false;Bloomerang.D
       '}',
 
       '.btn-submit-registration:hover {',
-      '  background: linear-gradient(225deg, #d852a8 0%, #063ba7 100%) !important;',
-      '  box-shadow: 0 15px 30px rgba(216,82,168,0.4) !important;',
+      '  background: #0747c4 !important;',
+      '  box-shadow: 0 15px 30px rgba(6,59,167,0.4) !important;',
       '}',
 
       '.btn-submit-registration.disabled,',
