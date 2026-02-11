@@ -1,440 +1,130 @@
 var insertForm750592 = function() {
-        var html750592 = '<style text=\'text/css\'>' +
-
-'/* === CASINO ROYALE FROSTED GLASS THEME === */' +
-
-'@import url(https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap);' +
-
-'#registration-form-container,' +
-'#registration-form-container *,' +
-'.registration-form,' +
-'.registration-form *{' +
-'  background-color:transparent !important;' +
-'  background-image:none !important;' +
-'  background:transparent !important;' +
-'}' +
-
-'#registration-form-container{' +
-'  font-family:Inter,sans-serif !important;' +
-'  max-width:100% !important;' +
-'  padding:10px 0 !important;' +
-'}' +
-
-'form.registration-form h3,' +
-'#registration-form h3{' +
-'  color:#ffffff !important;' +
-'  font-family:Inter,sans-serif !important;' +
-'  font-size:1.25rem !important;' +
-'  font-weight:600 !important;' +
-'  margin-bottom:16px !important;' +
-'  letter-spacing:0.02em !important;' +
-'}' +
-
-'form.registration-form section,' +
-'form.registration-form .section{' +
-'  padding:8px 0 !important;' +
-'}' +
-
-'form.registration-form .field{' +
-'  padding:6px 0 !important;' +
-'}' +
-
-'/* --- Labels --- */' +
-'form.registration-form label,' +
-'#registration-form label,' +
-'.registration-form label,' +
-'.registration-form label span,' +
-'.registration-form label .label{' +
-'  color:rgba(255,255,255,0.9) !important;' +
-'  font-family:Inter,sans-serif !important;' +
-'  font-size:0.85rem !important;' +
-'  font-weight:400 !important;' +
-'  margin-bottom:4px !important;' +
-'  display:block !important;' +
-'}' +
-
-'.registration-form .field .required-star{' +
-'  color:rgba(255,180,220,0.9) !important;' +
-'  display:inline-block !important;' +
-'  margin-left:5px !important;' +
-'}' +
-
-'form.registration-form label.error,' +
-'#registration-form label.error,' +
-'.registration-form #card-errors{' +
-'  color:#ff6b8a !important;' +
-'  font-size:0.8rem !important;' +
-'  padding:4px 16px !important;' +
-'  display:block !important;' +
-'}' +
-
-'/* --- All Inputs Frosted Glass --- */' +
-'.registration-form .field input[type=text],' +
-'.registration-form .field input[type=email],' +
-'.registration-form .field input[type=tel],' +
-'.registration-form .field input[type=number],' +
-'.registration-form .field input[type=date],' +
-'.registration-form .field select,' +
-'.registration-form .field textarea,' +
-'.registration-form #card-element{' +
-'  background:rgba(255,255,255,0.12) !important;' +
-'  border:1.5px solid rgba(255,255,255,0.3) !important;' +
-'  border-radius:30px !important;' +
-'  color:#ffffff !important;' +
-'  font-family:Inter,sans-serif !important;' +
-'  font-size:0.95rem !important;' +
-'  padding:14px 20px !important;' +
-'  max-width:100% !important;' +
-'  width:100% !important;' +
-'  box-sizing:border-box !important;' +
-'  outline:none !important;' +
-'  transition:all 0.3s ease !important;' +
-'  -webkit-appearance:none !important;' +
-'  appearance:none !important;' +
-'  height:auto !important;' +
-'  line-height:1.4 !important;' +
-'}' +
-
-'.registration-form .field textarea{' +
-'  border-radius:20px !important;' +
-'  min-height:100px !important;' +
-'  resize:vertical !important;' +
-'}' +
-
-'.registration-form .field input:focus,' +
-'.registration-form .field select:focus,' +
-'.registration-form .field textarea:focus{' +
-'  background:rgba(255,255,255,0.2) !important;' +
-'  border-color:rgba(255,255,255,0.5) !important;' +
-'  box-shadow:0 0 20px rgba(216,82,168,0.15) !important;' +
-'}' +
-
-'.registration-form .field input::placeholder,' +
-'.registration-form .field textarea::placeholder{' +
-'  color:rgba(255,255,255,0.5) !important;' +
-'}' +
-
-'/* --- Select dropdown --- */' +
-'.registration-form .field select{' +
-'  background-color:rgba(255,255,255,0.12) !important;' +
-'  background-image:url("data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'12\' height=\'12\' viewBox=\'0 0 12 12\'%3E%3Cpath fill=\'white\' d=\'M6 8L1 3h10z\'/%3E%3C/svg%3E") !important;' +
-'  background-repeat:no-repeat !important;' +
-'  background-position:right 16px center !important;' +
-'  padding-right:40px !important;' +
-'  cursor:pointer !important;' +
-'  box-sizing:content-box !important;' +
-'}' +
-
-'.registration-form .field select option{' +
-'  background:#3a2060 !important;' +
-'  color:#ffffff !important;' +
-'}' +
-
-'/* --- Radio Buttons (Ticket Types) --- */' +
-'.registration-form .field.radio label{' +
-'  display:flex !important;' +
-'  align-items:center !important;' +
-'  background:rgba(255,255,255,0.1) !important;' +
-'  border:1.5px solid rgba(255,255,255,0.25) !important;' +
-'  border-radius:30px !important;' +
-'  padding:14px 20px !important;' +
-'  margin-bottom:8px !important;' +
-'  cursor:pointer !important;' +
-'  transition:all 0.3s ease !important;' +
-'  color:rgba(255,255,255,0.9) !important;' +
-'}' +
-
-'.registration-form .field.radio label:hover{' +
-'  background:rgba(255,255,255,0.18) !important;' +
-'  border-color:rgba(255,255,255,0.4) !important;' +
-'}' +
-
-'.registration-form .field.radio input{' +
-'  width:auto !important;' +
-'  margin-right:12px !important;' +
-'  margin-left:0 !important;' +
-'  accent-color:#d852a8 !important;' +
-'  padding:0 !important;' +
-'  border-radius:50% !important;' +
-'}' +
-
-'.registration-form .field.radio label .label,' +
-'.registration-form .field.radio label span.label{' +
-'  color:rgba(255,255,255,0.95) !important;' +
-'  font-size:0.95rem !important;' +
-'  display:inline !important;' +
-'}' +
-
-'/* --- Checkboxes --- */' +
-'.registration-form .field.checkbox label{' +
-'  color:rgba(255,255,255,0.9) !important;' +
-'  display:inline-block !important;' +
-'}' +
-
-'.registration-form .field.checkbox input{' +
-'  width:auto !important;' +
-'  margin-left:0 !important;' +
-'}' +
-
-'.registration-form .field .checkboxes{' +
-'  max-width:100% !important;' +
-'  border:1.5px solid rgba(255,255,255,0.25) !important;' +
-'  border-radius:16px !important;' +
-'  overflow:hidden !important;' +
-'  transition:all .3s ease-out !important;' +
-'}' +
-
-'.registration-form .field .checkbox{' +
-'  display:block !important;' +
-'  position:relative !important;' +
-'  box-sizing:border-box !important;' +
-'  height:auto !important;' +
-'  line-height:1.4 !important;' +
-'  padding:10px 28px 10px 8px !important;' +
-'  border-bottom:1px solid rgba(255,255,255,0.1) !important;' +
-'  color:rgba(255,255,255,0.9) !important;' +
-'  overflow:hidden !important;' +
-'  text-decoration:none !important;' +
-'}' +
-
-'.registration-form .field .checkbox span.text{' +
-'  color:rgba(255,255,255,0.9) !important;' +
-'}' +
-
-'.registration-form .field .checkbox input{' +
-'  opacity:0.01 !important;' +
-'  position:absolute !important;' +
-'  left:-50px !important;' +
-'  z-index:-5 !important;' +
-'}' +
-
-'.registration-form .field .checkbox:last-child{border-bottom:none !important;}' +
-
-'.registration-form .field .checkbox.selected{' +
-'  background:linear-gradient(135deg,#d852a8,#063ba7) !important;' +
-'  color:#fff !important;' +
-'}' +
-
-'.registration-form .field .checkbox.selected span.text{' +
-'  color:#fff !important;' +
-'}' +
-
-'.registration-form .field .checkbox.selected:before{' +
-'  color:#fff !important;' +
-'  line-height:30px !important;' +
-'  position:absolute !important;' +
-'  right:10px !important;' +
-'}' +
-
-'.registration-form .section.consent .field.checkbox:not(.consent-all){margin-left:20px !important;}' +
-
-'/* --- Stripe Element --- */' +
-'.registration-form .field .StripeElement{' +
-'  background:rgba(255,255,255,0.12) !important;' +
-'  border:1.5px solid rgba(255,255,255,0.3) !important;' +
-'  border-radius:30px !important;' +
-'  padding:14px 20px !important;' +
-'  max-width:100% !important;' +
-'  width:100% !important;' +
-'  box-sizing:border-box !important;' +
-'  display:block !important;' +
-'  transition:all 0.3s ease !important;' +
-'}' +
-
-'.registration-form .field .StripeElement--focus{' +
-'  background:rgba(255,255,255,0.2) !important;' +
-'  border-color:rgba(255,255,255,0.5) !important;' +
-'  box-shadow:0 0 20px rgba(216,82,168,0.15) !important;' +
-'}' +
-
-'.registration-form .field textarea.international{height:120px !important;}' +
-
-'.registration-form .field .sidenote{' +
-'  color:rgba(255,255,255,0.5) !important;' +
-'  font-size:0.75rem !important;' +
-'}' +
-
-'.registration-form .field.additional-amount{' +
-'  display:inline-block !important;' +
-'  padding-left:6px !important;' +
-'}' +
-
-'.registration-form #additional-amount{width:65px !important;}' +
-
-'/* --- Errors --- */' +
-'.registration-form .errors{' +
-'  border:1.5px solid rgba(255,100,130,0.5) !important;' +
-'  color:#ff6b8a !important;' +
-'  padding:14px 20px !important;' +
-'  border-radius:16px !important;' +
-'}' +
-
-'.registration-form .radio label.error{' +
-'  display:inline-block !important;' +
-'  padding-right:86% !important;' +
-'  float:right !important;' +
-'}' +
-
-'.registration-form .hidden{display:none !important;}' +
-
-'/* --- Summary Table --- */' +
-'.registration-form .registration-summary{' +
-'  border-collapse:separate !important;' +
-'  border-spacing:0 !important;' +
-'  text-align:left !important;' +
-'  width:100% !important;' +
-'  border-radius:16px !important;' +
-'  overflow:hidden !important;' +
-'}' +
-
-'.registration-form .registration-summary td,' +
-'.registration-form .registration-summary th{' +
-'  padding:12px !important;' +
-'  color:#ffffff !important;' +
-'}' +
-
-'.registration-form .registration-summary th{' +
-'  color:rgba(255,255,255,0.7) !important;' +
-'  font-weight:500 !important;' +
-'  font-size:0.8rem !important;' +
-'  text-transform:uppercase !important;' +
-'  letter-spacing:0.05em !important;' +
-'  border-bottom:1px solid rgba(255,255,255,0.15) !important;' +
-'}' +
-
-'.registration-form .registration-summary .summary-total{' +
-'  font-weight:bold !important;' +
-'  border-top:1.5px solid rgba(255,255,255,0.3) !important;' +
-'}' +
-
-'.registration-form .registration-summary .summary-total td{' +
-'  color:#ffffff !important;' +
-'  font-weight:600 !important;' +
-'}' +
-
-'.registration-form .registration-summary span{' +
-'  color:#ffffff !important;' +
-'}' +
-
-'.registration-form .registration-summary .description-column{min-width:140px !important;}' +
-'.registration-form .registration-summary .quantity-column{min-width:70px !important;}' +
-'.registration-form .registration-summary .ticket-columns{min-width:60px !important;}' +
-'.registration-form .registration-summary label.error{display:block !important;}' +
-
-'.registration-form .registration-summary #numberOfRegistrations{' +
-'  background:rgba(255,255,255,0.12) !important;' +
-'  border:1px solid rgba(255,255,255,0.3) !important;' +
-'  border-radius:10px !important;' +
-'  color:#ffffff !important;' +
-'  padding:6px 8px !important;' +
-'  width:50px !important;' +
-'  text-align:center !important;' +
-'}' +
-
-'.registration-form .registration-summary input.amount-field{' +
-'  background:rgba(255,255,255,0.12) !important;' +
-'  border:1px solid rgba(255,255,255,0.3) !important;' +
-'  border-radius:10px !important;' +
-'  color:#ffffff !important;' +
-'  padding:6px 8px !important;' +
-'  width:80px !important;' +
-'}' +
-
-'/* --- Submit Button --- */' +
-'.btn-group{' +
-'  margin-top:20px !important;' +
-'  text-align:center !important;' +
-'}' +
-
-'.btn-group .btn-submit-registration,' +
-'.btn-submit-registration,' +
-'input.btn-submit-registration{' +
-'  background:linear-gradient(90deg,#d852a8 0%,#063ba7 100%) !important;' +
-'  color:#ffffff !important;' +
-'  font-family:Inter,sans-serif !important;' +
-'  font-size:1rem !important;' +
-'  font-weight:600 !important;' +
-'  letter-spacing:0.03em !important;' +
-'  border:none !important;' +
-'  border-radius:30px !important;' +
-'  padding:16px 40px !important;' +
-'  width:100% !important;' +
-'  max-width:100% !important;' +
-'  cursor:pointer !important;' +
-'  transition:all 0.3s cubic-bezier(0.23,1,0.32,1) !important;' +
-'  box-shadow:0 5px 20px rgba(216,82,168,0.3) !important;' +
-'  height:auto !important;' +
-'  line-height:1.4 !important;' +
-'}' +
-
-'.btn-submit-registration:hover{' +
-'  box-shadow:0 10px 30px rgba(216,82,168,0.5) !important;' +
-'}' +
-
-'.btn-submit-registration.disabled,' +
-'.btn-submit-registration:disabled{' +
-'  opacity:0.6 !important;' +
-'  cursor:not-allowed !important;' +
-'}' +
-
-'/* --- Processing & Success --- */' +
-'#registration-processing-container,' +
-'#registration-processing-container *{' +
-'  color:#ffffff !important;' +
-'}' +
-
-'.donation-success,' +
-'.donation-success *{' +
-'  color:#ffffff !important;' +
-'}' +
-
-'/* --- Consent --- */' +
-'.registration-form .section.consent label{' +
-'  color:rgba(255,255,255,0.85) !important;' +
-'  font-size:0.85rem !important;' +
-'}' +
-
-'/* --- reCAPTCHA --- */' +
-'.registration-form .section.captcha{' +
-'  display:flex !important;' +
-'  justify-content:center !important;' +
-'  padding:12px 0 !important;' +
-'}' +
-
-'/* --- Catch-all white text --- */' +
-'#registration-form-container span,' +
-'#registration-form-container p,' +
-'#registration-form-container div,' +
-'#registration-form-container td,' +
-'#registration-form-container th,' +
-'#registration-form-container h3,' +
-'#registration-form-container h4{' +
-'  color:#ffffff !important;' +
-'}' +
-
-'iframe#spreedly-iframe[style=\'visibility: hidden;\']{display: none;}' +
-
-'input, select, textarea, button{font-family: inherit;}' +
-
-'#spreedly-modal-overlay[style="visibility:hidden"]{display: none;}' +
-
-'/* --- Mobile --- */' +
-'@media (max-width:768px){' +
-'  .registration-form .field input,' +
-'  .registration-form .field select,' +
-'  .registration-form .field textarea{' +
-'    padding:12px 16px !important;' +
-'    font-size:0.9rem !important;' +
-'  }' +
-'  .registration-form .field.radio label{' +
-'    padding:12px 16px !important;' +
-'  }' +
-'  .btn-submit-registration{' +
-'    padding:14px 30px !important;' +
-'  }' +
-'}' +
-
-'</style>' +
+        var html750592 = '<style text=\'text/css\'>' + 
+'.registration-form label{color: #404040;' + 
+'                display: block;}' + 
+'' + 
+'.registration-form label.error,' + 
+'                     .registration-form #card-errors{color: #900;}' + 
+'' + 
+'.registration-form label.error{display: block;' + 
+'                padding: 0 10px;}' + 
+'' + 
+'.registration-form section{padding: 5px;}' + 
+'' + 
+'.registration-form .field{padding: 4px 0;}' + 
+'' + 
+'.registration-form .field .required-star{color: #aa0000; ' + 
+'                display: inline-block; ' + 
+'                margin-left: 5px;}' + 
+'' + 
+'.registration-form .field .checkboxes{max-width:275px;' + 
+'                border: 1px solid #A9A9A9;' + 
+'                -webkit-transition: all .3s ease-out;' + 
+'                -moz-transition: all .3s ease-out;' + 
+'                transition: all .3s ease-out;}' + 
+'' + 
+'.registration-form .field .checkbox{display:block;' + 
+'                position:relative;' + 
+'                -moz-box-sizing:border-box;' + 
+'                box-sizing:border-box;' + 
+'                height:30px;' + 
+'                line-height:26px;' + 
+'                padding:2px 28px 2px 8px;' + 
+'                border-bottom:1px solid rgba(0,0,0,0.1);' + 
+'                color:#404040;  ' + 
+'                overflow:hidden;' + 
+'                text-decoration:none; }' + 
+'' + 
+'.registration-form .field .checkbox input{opacity:0.01;' + 
+'                position:absolute;' + 
+'                left:-50px;  ' + 
+'                z-index:-5;}' + 
+'' + 
+'.registration-form .field .checkbox:last-child{border-bottom:none;}' + 
+'' + 
+'.registration-form .field .checkbox.selected{background: rgb(50, 142, 253);' + 
+'                color:#fff; }' + 
+'' + 
+'.registration-form .field .checkbox.selected:before{color:#fff;' + 
+'                line-height:30px;' + 
+'                position:absolute;' + 
+'                right:10px; }' + 
+'' + 
+'.registration-form .section.consent .field.checkbox:not(.consent-all){margin-left: 20px;}' + 
+'' + 
+'.registration-form .field input,' + 
+'                     .registration-form .field select,' + 
+'                     .registration-form .field textarea,' + 
+'                     .registration-form #card-element{padding: 4px; ' + 
+'                max-width: 275px;' + 
+'                width: 96%}' + 
+'' + 
+'.registration-form .field .StripeElement{background-color: white;' + 
+'                background-color: -moz-field;' + 
+'                border: 1px solid darkgray;' + 
+'                display: inline-block;}' + 
+'' + 
+'.registration-form .field textarea.international{height: 120px;}' + 
+'' + 
+'.registration-form .field select{box-sizing: content-box;}' + 
+'' + 
+'.registration-form .field.radio label,' + 
+'                     .registration-form .field.checkbox label{display: inline-block;}' + 
+'' + 
+'.registration-form .field.radio input,' + 
+'                     .registration-form .field.checkbox input{width: auto;' + 
+'                margin-left: 0;}' + 
+'' + 
+'.registration-form .field .sidenote{color: #999;' + 
+'                font-size: 10px; }' + 
+'' + 
+'.registration-form .field.additional-amount,{display: inline-block;}' + 
+'' + 
+'.registration-form .field.additional-amount{padding-left: 6px;}' + 
+'' + 
+'.registration-form #additional-amount{width: 65px;}' + 
+'' + 
+'.registration-form .errors{border: 1px solid #900;' + 
+'                color: #900;  ' + 
+'                padding: 10px;}' + 
+'' + 
+'.registration-form .radio label.error{display: inline-block;' + 
+'                padding-right: 86%;  ' + 
+'                float: right;}' + 
+'' + 
+'.registration-form .hidden{display: none;}' + 
+'' + 
+'.btn-group .btn-submit-registration{padding: 4px 10px;}' + 
+'' + 
+'.registration-form .registration-summary{border-collapse: collapse}' + 
+'' + 
+'.registration-form .registration-summary td,' + 
+'                     .registration-form .registration-summary th{padding: 5px}' + 
+'' + 
+'.registration-form .registration-summary .summary-total{font-weight: bold;' + 
+'                border-top: 1px solid black;}' + 
+'' + 
+'.registration-form .registration-summary{text-align: left;}' + 
+'' + 
+'.registration-form .registration-summary .description-column{min-width: 140px;}' + 
+'' + 
+'.registration-form .registration-summary .quantity-column{min-width: 70px;}' + 
+'' + 
+'.registration-form .registration-summary .ticket-columns{min-width: 60px;}' + 
+'' + 
+'.registration-form .registration-summary label.error{display: block;}' + 
+'' + 
+'.registration-form .registration-summary #numberOfRegistrations{width: 40px;}' + 
+'' + 
+'.registration-form .registration-summary input.amount-field{width: 65px;}' + 
+'' + 
+'iframe#spreedly-iframe[style=\'visibility: hidden;\']{display: none;}' + 
+'' + 
+'input, select, textarea, button{font-family: inherit;}' + 
+'' + 
+'#spreedly-modal-overlay[style="visibility:hidden"]{display: none;}' + 
+'' + 
+'</style>' + 
 '' + 
 '<div id="registration-form-container">' + 
 '  <form id="registration-form" class="registration-form" method="post" onsubmit="event.preventDefault(); collectPayment();">' + 
@@ -1074,11 +764,10 @@ var insertForm750592 = function() {
                                                 base: {
                                                   color: "#ffffff",
                                                   fontSize: "14px",
-                                                  fontFamily: "Inter, sans-serif",
-                                                  '::placeholder': { color: 'rgba(255,255,255,0.5)' }
+                                                  fontFamily: "Inter, sans-serif"
                                                 },
                                                 invalid: {
-                                                  color: "#ff6b8a"
+                                                  color: "#ffffff"
                                                 }
                                               }
                                             });
@@ -1739,3 +1428,467 @@ Bloomerang.Data.PayPal.IsPayPalPaymentMethodVaultingEnabled = false;Bloomerang.D
                 };
 
                 startBloomerangLoad();
+
+// === CASINO ROYALE FROSTED GLASS THEME ===
+(function() {
+  function applyTheme() {
+    // Remove any previous injection
+    var old = document.getElementById('casino-royale-theme');
+    if (old) old.remove();
+
+    var css = document.createElement('style');
+    css.id = 'casino-royale-theme';
+    css.textContent = [
+
+      // ========== TRANSPARENT BACKGROUNDS ==========
+      '#registration-form-container,',
+      '#registration-form-container *,',
+      '.registration-form,',
+      '.registration-form * {',
+      '  background-color: transparent !important;',
+      '  background-image: none !important;',
+      '  background: transparent !important;',
+      '}',
+
+      // Also nuke the Webflow wrapper backgrounds
+      '.donation-form.w-embed,',
+      '.donation-form.w-embed *,',
+      '.div-block-29,',
+      '.div-block-29 *,',
+      '.div-block-19,',
+      '.div-block-20 {',
+      '  background: transparent !important;',
+      '  background-color: transparent !important;',
+      '}',
+
+      // ========== CONTAINER ==========
+      '#registration-form-container {',
+      '  font-family: "Inter", sans-serif !important;',
+      '  max-width: 100% !important;',
+      '  padding: 10px 0 !important;',
+      '}',
+
+      // ========== SECTION HEADERS ==========
+      '.registration-form h3 {',
+      '  color: #ffffff !important;',
+      '  font-family: "Inter", sans-serif !important;',
+      '  font-size: 1.25rem !important;',
+      '  font-weight: 600 !important;',
+      '  margin-bottom: 16px !important;',
+      '}',
+
+      // ========== SECTIONS & FIELDS ==========
+      '.registration-form section,',
+      '.registration-form .section {',
+      '  padding: 8px 0 !important;',
+      '}',
+      '.registration-form .field {',
+      '  padding: 6px 0 !important;',
+      '}',
+
+      // ========== LABELS ==========
+      '.registration-form label,',
+      '.registration-form label span,',
+      '.registration-form label .label,',
+      '.registration-form .field label {',
+      '  color: rgba(255,255,255,0.9) !important;',
+      '  font-family: "Inter", sans-serif !important;',
+      '  font-size: 0.85rem !important;',
+      '  font-weight: 400 !important;',
+      '  margin-bottom: 4px !important;',
+      '  display: block !important;',
+      '}',
+
+      '.registration-form .field .required-star {',
+      '  color: rgba(255,180,220,0.9) !important;',
+      '  display: inline-block !important;',
+      '  margin-left: 5px !important;',
+      '}',
+
+      // Error labels
+      '.registration-form label.error,',
+      '.registration-form #card-errors {',
+      '  color: #ff6b8a !important;',
+      '  font-size: 0.8rem !important;',
+      '  padding: 4px 16px !important;',
+      '}',
+
+      // ========== ALL INPUTS - FROSTED GLASS ==========
+      '.registration-form .field input[type="text"],',
+      '.registration-form .field input[type="email"],',
+      '.registration-form .field input[type="tel"],',
+      '.registration-form .field input[type="number"],',
+      '.registration-form .field input[type="date"],',
+      '.registration-form .field select,',
+      '.registration-form .field textarea,',
+      '.registration-form #card-element {',
+      '  background: rgba(255,255,255,0.12) !important;',
+      '  border: 1.5px solid rgba(255,255,255,0.3) !important;',
+      '  border-radius: 30px !important;',
+      '  color: #ffffff !important;',
+      '  font-family: "Inter", sans-serif !important;',
+      '  font-size: 0.95rem !important;',
+      '  padding: 14px 20px !important;',
+      '  max-width: 100% !important;',
+      '  width: 100% !important;',
+      '  box-sizing: border-box !important;',
+      '  outline: none !important;',
+      '  transition: all 0.3s ease !important;',
+      '  -webkit-appearance: none !important;',
+      '  appearance: none !important;',
+      '  height: auto !important;',
+      '  line-height: 1.4 !important;',
+      '}',
+
+      // Textarea
+      '.registration-form .field textarea {',
+      '  border-radius: 20px !important;',
+      '  min-height: 100px !important;',
+      '  resize: vertical !important;',
+      '}',
+
+      // Focus
+      '.registration-form .field input:focus,',
+      '.registration-form .field select:focus,',
+      '.registration-form .field textarea:focus {',
+      '  background: rgba(255,255,255,0.2) !important;',
+      '  border-color: rgba(255,255,255,0.5) !important;',
+      '  box-shadow: 0 0 20px rgba(216,82,168,0.15) !important;',
+      '}',
+
+      // Placeholder
+      '.registration-form .field input::placeholder,',
+      '.registration-form .field textarea::placeholder {',
+      '  color: rgba(255,255,255,0.5) !important;',
+      '}',
+
+      // Select dropdown
+      '.registration-form .field select {',
+      '  background-color: rgba(255,255,255,0.12) !important;',
+      '  background-image: url("data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'12\' height=\'12\' viewBox=\'0 0 12 12\'%3E%3Cpath fill=\'white\' d=\'M6 8L1 3h10z\'/%3E%3C/svg%3E") !important;',
+      '  background-repeat: no-repeat !important;',
+      '  background-position: right 16px center !important;',
+      '  padding-right: 40px !important;',
+      '  cursor: pointer !important;',
+      '}',
+
+      '.registration-form .field select option {',
+      '  background: #3a2060 !important;',
+      '  color: #ffffff !important;',
+      '}',
+
+      // ========== RADIO BUTTONS (TICKET TYPES) ==========
+      '.registration-form .field.radio label {',
+      '  display: flex !important;',
+      '  align-items: center !important;',
+      '  background: rgba(255,255,255,0.1) !important;',
+      '  border: 1.5px solid rgba(255,255,255,0.25) !important;',
+      '  border-radius: 30px !important;',
+      '  padding: 14px 20px !important;',
+      '  margin-bottom: 8px !important;',
+      '  cursor: pointer !important;',
+      '  transition: all 0.3s ease !important;',
+      '  color: rgba(255,255,255,0.9) !important;',
+      '}',
+
+      '.registration-form .field.radio label:hover {',
+      '  background: rgba(255,255,255,0.18) !important;',
+      '  border-color: rgba(255,255,255,0.4) !important;',
+      '}',
+
+      '.registration-form .field.radio input {',
+      '  width: auto !important;',
+      '  margin-right: 12px !important;',
+      '  margin-left: 0 !important;',
+      '  accent-color: #d852a8 !important;',
+      '  padding: 0 !important;',
+      '  border-radius: 50% !important;',
+      '}',
+
+      '.registration-form .field.radio label .label,',
+      '.registration-form .field.radio label span.label {',
+      '  color: rgba(255,255,255,0.95) !important;',
+      '  font-size: 0.95rem !important;',
+      '  display: inline !important;',
+      '}',
+
+      // ========== CHECKBOXES (MULTI-SELECT) ==========
+      '.registration-form .field .checkboxes {',
+      '  max-width: 100% !important;',
+      '  border: 1.5px solid rgba(255,255,255,0.25) !important;',
+      '  border-radius: 16px !important;',
+      '  overflow: hidden !important;',
+      '}',
+
+      '.registration-form .field .checkbox {',
+      '  display: flex !important;',
+      '  align-items: center !important;',
+      '  position: relative !important;',
+      '  box-sizing: border-box !important;',
+      '  height: auto !important;',
+      '  line-height: 1.4 !important;',
+      '  padding: 12px 16px 12px 44px !important;',
+      '  border-bottom: 1px solid rgba(255,255,255,0.1) !important;',
+      '  color: rgba(255,255,255,0.9) !important;',
+      '  overflow: visible !important;',
+      '  text-decoration: none !important;',
+      '  cursor: pointer !important;',
+      '  transition: background 0.2s ease !important;',
+      '}',
+
+      '.registration-form .field .checkbox:last-child {',
+      '  border-bottom: none !important;',
+      '}',
+
+      '.registration-form .field .checkbox:hover {',
+      '  background: rgba(255,255,255,0.06) !important;',
+      '}',
+
+      // Custom checkbox indicator via ::before
+      '.registration-form .field .checkbox::before {',
+      '  content: "" !important;',
+      '  position: absolute !important;',
+      '  left: 14px !important;',
+      '  top: 50% !important;',
+      '  transform: translateY(-50%) !important;',
+      '  width: 18px !important;',
+      '  height: 18px !important;',
+      '  border: 2px solid rgba(255,255,255,0.4) !important;',
+      '  border-radius: 4px !important;',
+      '  background: rgba(255,255,255,0.08) !important;',
+      '  transition: all 0.2s ease !important;',
+      '  flex-shrink: 0 !important;',
+      '}',
+
+      // Selected state
+      '.registration-form .field .checkbox.selected {',
+      '  background: linear-gradient(135deg, rgba(216,82,168,0.3), rgba(6,59,167,0.3)) !important;',
+      '  color: #fff !important;',
+      '}',
+
+      '.registration-form .field .checkbox.selected::before {',
+      '  content: "\\2713" !important;',
+      '  background: linear-gradient(135deg, #d852a8, #063ba7) !important;',
+      '  border-color: transparent !important;',
+      '  color: #ffffff !important;',
+      '  font-size: 12px !important;',
+      '  display: flex !important;',
+      '  align-items: center !important;',
+      '  justify-content: center !important;',
+      '  line-height: 1 !important;',
+      '}',
+
+      // Keep the real checkbox hidden
+      '.registration-form .field .checkbox input {',
+      '  opacity: 0.01 !important;',
+      '  position: absolute !important;',
+      '  left: -50px !important;',
+      '  z-index: -5 !important;',
+      '}',
+
+      '.registration-form .field .checkbox span.text {',
+      '  color: rgba(255,255,255,0.9) !important;',
+      '}',
+      '.registration-form .field .checkbox.selected span.text {',
+      '  color: #ffffff !important;',
+      '}',
+
+      // ========== CONSENT CHECKBOXES ==========
+      '.registration-form .field.checkbox label {',
+      '  color: rgba(255,255,255,0.9) !important;',
+      '  display: inline-block !important;',
+      '}',
+      '.registration-form .field.checkbox input {',
+      '  width: auto !important;',
+      '  margin-left: 0 !important;',
+      '}',
+      '.registration-form .section.consent .field.checkbox:not(.consent-all) {',
+      '  margin-left: 20px !important;',
+      '}',
+
+      // ========== STRIPE ==========
+      '.registration-form .field .StripeElement {',
+      '  background: rgba(255,255,255,0.12) !important;',
+      '  border: 1.5px solid rgba(255,255,255,0.3) !important;',
+      '  border-radius: 30px !important;',
+      '  padding: 14px 20px !important;',
+      '  max-width: 100% !important;',
+      '  width: 100% !important;',
+      '  box-sizing: border-box !important;',
+      '  display: block !important;',
+      '}',
+
+      // ========== SUMMARY TABLE ==========
+      '.registration-form .registration-summary {',
+      '  border-collapse: separate !important;',
+      '  border-spacing: 0 !important;',
+      '  text-align: left !important;',
+      '  width: 100% !important;',
+      '  border-radius: 16px !important;',
+      '  overflow: hidden !important;',
+      '}',
+
+      '.registration-form .registration-summary td,',
+      '.registration-form .registration-summary th {',
+      '  padding: 12px !important;',
+      '  color: #ffffff !important;',
+      '}',
+
+      '.registration-form .registration-summary th {',
+      '  color: rgba(255,255,255,0.7) !important;',
+      '  font-weight: 500 !important;',
+      '  font-size: 0.8rem !important;',
+      '  text-transform: uppercase !important;',
+      '  letter-spacing: 0.05em !important;',
+      '  border-bottom: 1px solid rgba(255,255,255,0.15) !important;',
+      '}',
+
+      '.registration-form .registration-summary .summary-total {',
+      '  font-weight: bold !important;',
+      '  border-top: 1.5px solid rgba(255,255,255,0.3) !important;',
+      '}',
+
+      '.registration-form .registration-summary span {',
+      '  color: #ffffff !important;',
+      '}',
+
+      '.registration-form .registration-summary #numberOfRegistrations {',
+      '  background: rgba(255,255,255,0.12) !important;',
+      '  border: 1px solid rgba(255,255,255,0.3) !important;',
+      '  border-radius: 10px !important;',
+      '  color: #ffffff !important;',
+      '  padding: 6px 8px !important;',
+      '  width: 50px !important;',
+      '  text-align: center !important;',
+      '}',
+
+      '.registration-form .registration-summary input.amount-field {',
+      '  background: rgba(255,255,255,0.12) !important;',
+      '  border: 1px solid rgba(255,255,255,0.3) !important;',
+      '  border-radius: 10px !important;',
+      '  color: #ffffff !important;',
+      '  padding: 6px 8px !important;',
+      '  width: 80px !important;',
+      '}',
+
+      // ========== SUBMIT BUTTON ==========
+      '.btn-group {',
+      '  margin-top: 20px !important;',
+      '  text-align: center !important;',
+      '}',
+
+      '.btn-submit-registration,',
+      'input.btn-submit-registration {',
+      '  background: linear-gradient(90deg, #d852a8 0%, #063ba7 100%) !important;',
+      '  color: #ffffff !important;',
+      '  font-family: "Inter", sans-serif !important;',
+      '  font-size: 1rem !important;',
+      '  font-weight: 600 !important;',
+      '  letter-spacing: 0.03em !important;',
+      '  border: none !important;',
+      '  border-radius: 30px !important;',
+      '  padding: 16px 40px !important;',
+      '  width: 100% !important;',
+      '  max-width: 100% !important;',
+      '  cursor: pointer !important;',
+      '  transition: all 0.3s ease !important;',
+      '  box-shadow: 0 5px 20px rgba(216,82,168,0.3) !important;',
+      '  height: auto !important;',
+      '  line-height: 1.4 !important;',
+      '}',
+
+      '.btn-submit-registration:hover {',
+      '  box-shadow: 0 10px 30px rgba(216,82,168,0.5) !important;',
+      '}',
+
+      '.btn-submit-registration.disabled,',
+      '.btn-submit-registration:disabled {',
+      '  opacity: 0.6 !important;',
+      '  cursor: not-allowed !important;',
+      '}',
+
+      // ========== ERRORS ==========
+      '.registration-form .errors {',
+      '  border: 1.5px solid rgba(255,100,130,0.5) !important;',
+      '  color: #ff6b8a !important;',
+      '  padding: 14px 20px !important;',
+      '  border-radius: 16px !important;',
+      '}',
+
+      '.registration-form .hidden { display: none !important; }',
+
+      // ========== SIDENOTES ==========
+      '.registration-form .field .sidenote {',
+      '  color: rgba(255,255,255,0.5) !important;',
+      '  font-size: 0.75rem !important;',
+      '}',
+
+      // ========== PROCESSING & SUCCESS ==========
+      '#registration-processing-container,',
+      '#registration-processing-container * {',
+      '  color: #ffffff !important;',
+      '}',
+      '.donation-success,',
+      '.donation-success * {',
+      '  color: #ffffff !important;',
+      '}',
+
+      // ========== CAPTCHA ==========
+      '.registration-form .section.captcha {',
+      '  display: flex !important;',
+      '  justify-content: center !important;',
+      '  padding: 12px 0 !important;',
+      '}',
+
+      // ========== CATCH-ALL TEXT WHITE ==========
+      '#registration-form-container span,',
+      '#registration-form-container p,',
+      '#registration-form-container div,',
+      '#registration-form-container td,',
+      '#registration-form-container th,',
+      '#registration-form-container h3,',
+      '#registration-form-container h4 {',
+      '  color: #ffffff !important;',
+      '}',
+
+      // ========== MOBILE ==========
+      '@media (max-width: 768px) {',
+      '  .registration-form .field input,',
+      '  .registration-form .field select,',
+      '  .registration-form .field textarea {',
+      '    padding: 12px 16px !important;',
+      '    font-size: 16px !important;',
+      '  }',
+      '  .registration-form .field.radio label {',
+      '    padding: 12px 16px !important;',
+      '  }',
+      '  .btn-submit-registration {',
+      '    padding: 14px 30px !important;',
+      '  }',
+      '}',
+
+    ].join('\n');
+
+    document.head.appendChild(css);
+  }
+
+  // Apply immediately when form container appears
+  var observer = new MutationObserver(function(mutations) {
+    if (document.getElementById('registration-form-container')) {
+      applyTheme();
+      observer.disconnect();
+    }
+  });
+  observer.observe(document.body || document.documentElement, { childList: true, subtree: true });
+
+  // Also apply on intervals to catch late-loading elements
+  setTimeout(applyTheme, 1000);
+  setTimeout(applyTheme, 2000);
+  setTimeout(applyTheme, 3500);
+  setTimeout(applyTheme, 5000);
+
+  // Apply immediately if form already exists
+  if (document.getElementById('registration-form-container')) {
+    applyTheme();
+  }
+})();
