@@ -678,9 +678,9 @@ var insertForm750592 = function() {
 '                              </a>' + 
 '</div>' + 
 '</div>' + 
-'<div class="field text CustomTransactionField_801793" >' + 
-'<label for="CustomTransactionField_801793">Will you be attending with a guest?</label>' + 
-'<select id="CustomTransactionField_801793" name="CustomTransactionField_801793"><option value=""></option>' + 
+'<div class="field text CustomTransactionField_801793 required" >' + 
+'<label for="CustomTransactionField_801793">Will you be attending with a guest?<span class="required-star">*</span></label>' + 
+'<select id="CustomTransactionField_801793" name="CustomTransactionField_801793" class="required"><option value=""></option>' + 
 '<option value="803841">No</option>' + 
 '<option value="802817">Yes</option>' + 
 '</select>' + 
@@ -738,8 +738,8 @@ var insertForm750592 = function() {
 '' + 
 '' +  '';var successHtml750592 = '<div class=\'donation-success\'>' +
                                                        '  <h2>Thank You for Your Registration!</h2>' +
-                                                       '  <p>Your registration for our event has been successfully processed. We look forward to seeing you there!</p>' + 
-                                                        '\u003cdiv class=\"social-media-buttons\" style=\"margin-top:10px;\"\u003e\u003cdiv id=\"twitter-buttons\"\u003e\u003c/div\u003e\u003cdiv class=\"fb-like\" data-href=\"https://facebook.com/studentfreedomorg\" data-layout=\"button_count\" data-show-faces=\"true\" style=\"padding-right: 10px;\" data-action=\"like\" \u003e\u003c/div\u003e\u003cdiv id=\"facebookShareOnly\" class=\"fb-share-button\" data-href=\"https://facebook.com/studentfreedomorg\" data-layout=\"button_count\"\u003e\u003c/div\u003e\u003cscript type=\u0027text/javascript\u0027\u003edocument.getElementById(\u0027facebookShareOnly\u0027).setAttribute(\u0027data-href\u0027, window.location.href);\u003c/script\u003e\u003c/div\u003e \u003cscript\u003e\r\n                    if (navigator.userAgent.indexOf(\u0027Edge/\u0027) === -1) {\r\n                        !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?\"http\":\"https\";if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+\"://platform.twitter.com/widgets.js\";fjs.parentNode.insertBefore(js,fjs);}}(document, \"script\", \"twitter-wjs\");\r\n                        var twitterButtons = document.getElementById(\u0027twitter-buttons\u0027);\r\n                        twitterButtons.innerHTML = \u0027\u003cdiv id=\"tweetButton\" style=\"float:left; margin-right:10px\"\u003e \u003ca href=\"https://twitter.com/share\" data-text=\"I just registered for an event supporting @StudentFreedom. Come join me!\" class=\"twitter-share-button\"\u003eTweet\u003c/a\u003e \u003c/div\u003e\u003cdiv id=\"followButton\"\u003e \u003ca href=\"https://twitter.com/StudentFreedom\" class=\"twitter-follow-button\"\u003eFollow\u003c/a\u003e \u003c/div\u003e\u0027;\r\n                        twitterButtons.style.height = \u002735px\u0027;\r\n                    }\r\n                \u003c/script\u003e \u003cdiv id=\"fb-root\"\u003e\u003c/div\u003e \u003cscript\u003e(function(d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) return; js = d.createElement(s); js.id = id; js.src = \"//connect.facebook.net/en_US/sdk.js#xfbml=1\u0026version=v2.8\"; fjs.parentNode.insertBefore(js, fjs); }(document, \u0027script\u0027, \u0027facebook-jssdk\u0027));\u003c/script\u003e \u003cdiv class=\"additional-tickets\" style=\"margin-top: 10px;\"\u003e\u003cbutton type=\"button\" onclick=\"javascript:location.reload()\"\u003ePurchase Additional Tickets\u003c/button\u003e\u003c/div\u003e' + 
+                                                       '  <p>Thank you for your donation in support of the work of the Student Freedom Initiative. Your support will help us increase the social and economic mobility of students of color, providing them catalysts for freedom in individual career and life choices. On behalf of our board, staff and student beneficiaries, we thank you very much</p>' + 
+                                                        '   \u003cdiv class=\"additional-tickets\" style=\"margin-top: 10px;\"\u003e\u003cbutton type=\"button\" onclick=\"javascript:location.reload()\"\u003ePurchase Additional Tickets\u003c/button\u003e\u003c/div\u003e' + 
                                                         '</div>';( function($) {if (Bloomerang.useDonationId('750592')) { 
                                 Bloomerang.useProcessor('13313', 'Stripe', 'pk_live_51Ha9bqHpWuT9ujWsoE8cJruzrkhtByX1MM2LLniGsl4Mi0wFUV76xstVN1TAcy62Ve6p0IoJxEFmhJaDRkdHUtzm00dAzaicPA');
                             } else {
@@ -1776,9 +1776,15 @@ Bloomerang.Data.PayPal.IsPayPalPaymentMethodVaultingEnabled = false;Bloomerang.D
       '  text-align: center !important;',
       '}',
 
-      '.btn-submit-registration,',
-      'input.btn-submit-registration {',
+      '#registration-form-container .btn-group .btn-submit-registration,',
+      '#registration-form-container .btn-group input.btn-submit-registration,',
+      '#registration-form-container input[type="submit"].btn-submit-registration,',
+      '.registration-form .btn-submit-registration,',
+      'input.btn.btn-submit.btn-submit-registration,',
+      'input#express-submit {',
       '  background: #063ba7 !important;',
+      '  background-image: none !important;',
+      '  background-color: #063ba7 !important;',
       '  color: #ffffff !important;',
       '  font-family: "Inter", sans-serif !important;',
       '  font-size: 1.05rem !important;',
@@ -1796,17 +1802,24 @@ Bloomerang.Data.PayPal.IsPayPalPaymentMethodVaultingEnabled = false;Bloomerang.D
       '  line-height: 1.4 !important;',
       '  position: relative !important;',
       '  overflow: hidden !important;',
+      '  -webkit-appearance: none !important;',
       '}',
 
-      '.btn-submit-registration:hover {',
+      '#registration-form-container .btn-submit-registration:hover,',
+      'input#express-submit:hover {',
       '  background: #0747c4 !important;',
+      '  background-image: none !important;',
+      '  background-color: #0747c4 !important;',
       '  box-shadow: 0 15px 30px rgba(6,59,167,0.4) !important;',
       '}',
 
-      '.btn-submit-registration.disabled,',
-      '.btn-submit-registration:disabled {',
+      '#registration-form-container .btn-submit-registration.disabled,',
+      '#registration-form-container .btn-submit-registration:disabled,',
+      'input#express-submit:disabled {',
       '  opacity: 0.6 !important;',
       '  cursor: not-allowed !important;',
+      '  background: #063ba7 !important;',
+      '  background-image: none !important;',
       '}',
 
       // ========== ERRORS ==========
@@ -1883,6 +1896,14 @@ Bloomerang.Data.PayPal.IsPayPalPaymentMethodVaultingEnabled = false;Bloomerang.D
     ].join('\n');
 
     document.head.appendChild(css);
+
+    // Direct inline style override for submit button (nuclear option against Webflow styles)
+    var submitBtn = document.getElementById('express-submit');
+    if (submitBtn) {
+      submitBtn.style.setProperty('background', '#063ba7', 'important');
+      submitBtn.style.setProperty('background-image', 'none', 'important');
+      submitBtn.style.setProperty('background-color', '#063ba7', 'important');
+    }
   }
 
   // Apply immediately when form container appears
