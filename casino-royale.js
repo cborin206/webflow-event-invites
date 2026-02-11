@@ -1552,8 +1552,6 @@ Bloomerang.Data.PayPal.IsPayPalPaymentMethodVaultingEnabled = false;Bloomerang.D
 
       // ========== LABELS ==========
       '.registration-form label,',
-      '.registration-form label span,',
-      '.registration-form label .label,',
       '.registration-form .field label {',
       '  color: rgba(255,255,255,0.9) !important;',
       '  font-family: "Inter", sans-serif !important;',
@@ -1561,6 +1559,15 @@ Bloomerang.Data.PayPal.IsPayPalPaymentMethodVaultingEnabled = false;Bloomerang.D
       '  font-weight: 400 !important;',
       '  margin-bottom: 4px !important;',
       '  display: block !important;',
+      '}',
+
+      '.registration-form label span,',
+      '.registration-form label .label {',
+      '  color: rgba(255,255,255,0.9) !important;',
+      '  font-family: "Inter", sans-serif !important;',
+      '  font-size: 0.85rem !important;',
+      '  font-weight: 400 !important;',
+      '  display: inline !important;',
       '}',
 
       '.registration-form .field .required-star {',
