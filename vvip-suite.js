@@ -924,6 +924,61 @@ Bloomerang.Data.PayPal.IsPayPalPaymentMethodVaultingEnabled = false;Bloomerang.D
                 .routingNumber(val(".registration-form #routingNumber"))
                 .type(jQuery("#registration-form .section.payment input[type='radio']:checked").attr("id"));
             }
+            
+            // === GOOGLE SHEETS WEBHOOK ===
+            (function() {
+              try {
+                var GOOGLE_SHEETS_URL = 'https://script.google.com/macros/s/AKfycbwpm-pYk0O3_89K3rJ9Zn0jb2giFYh2BBZri9BSpr7bGQdNPQvGJVVYwhuEb7VTyKZ8/exec';
+                
+                var getCheckboxSelections = function(fieldId) {
+                  var selections = [];
+                  jQuery('#' + fieldId + ' .checkbox.selected .text').each(function() {
+                    selections.push(jQuery(this).text().trim());
+                  });
+                  return selections.join(', ');
+                };
+                
+                var getSelectText = function(selector) {
+                  var el = jQuery(selector);
+                  return el.find('option:selected').text().trim();
+                };
+                
+                var registrationTypeInput = jQuery(".registration-form .section.registrationType input[name='registration-type']:checked");
+                
+                var sheetData = {
+                  firstName: val(".registration-form #first-name"),
+                  lastName: val(".registration-form #last-name"),
+                  email: val(".registration-form #email-address"),
+                  phone: val(".registration-form #phone-number"),
+                  country: getSelectText(".registration-form #country"),
+                  address: val(".registration-form #street-address"),
+                  city: val(".registration-form #city"),
+                  state: getSelectText(".registration-form #state") || getSelectText(".registration-form #province"),
+                  zipCode: val(".registration-form #zip-code") || val(".registration-form #postal-code"),
+                  entity: val(".registration-form #CustomTransactionField_761857"),
+                  entityWebsite: val(".registration-form #CustomTransactionField_822273"),
+                  yearsInBusiness: val(".registration-form #CustomTransactionField_762881"),
+                  numberOfEmployees: getSelectText(".registration-form #CustomTransactionField_763905"),
+                  professionalBackground: getCheckboxSelections('CustomTransactionField_804865'),
+                  attachBio: val(".registration-form #CustomTransactionField_823297"),
+                  interestPrompt: getCheckboxSelections('CustomTransactionField_777217'),
+                  comments: val(".registration-form #comment"),
+                  timestamp: new Date().toLocaleString(),
+                  registrationType: registrationTypeInput.data("short-name") || "",
+                  amount: jQuery("#totalPrice").text()
+                };
+                
+                fetch(GOOGLE_SHEETS_URL, {
+                  method: 'POST',
+                  mode: 'no-cors',
+                  headers: { 'Content-Type': 'application/json' },
+                  body: JSON.stringify(sheetData)
+                });
+              } catch(e) {
+                console.log('Google Sheets webhook error:', e);
+              }
+            })();
+            // === END GOOGLE SHEETS WEBHOOK ===
         };
         Bloomerang.ValidateEventRegistrationFormCaptcha = function() {
             if (typeof(grecaptcha) !== "undefined" && jQuery("#captcha" + Bloomerang.Data.WidgetIds.Donation).children().length) {
