@@ -692,16 +692,9 @@ var insertForm750592 = function() {
 '                              </a>' + 
 '</div>' + 
 '</div>' + 
-'<div class="field text CustomTransactionField_801793 required" >' + 
-'<label for="CustomTransactionField_801793">For Couples Donations, please enter your guests\' info below(Name, Email, Phone, Number):<span class="required-star">*</span></label>' + 
-'<select id="CustomTransactionField_801793" name="CustomTransactionField_801793" class="required" style="display:none"><option value=""></option>' + 
-'<option value="803841">No</option>' + 
-'<option value="802817">Yes</option>' + 
-'</select>' + 
-'<div class="custom-radio-group" data-target="CustomTransactionField_801793">' + 
-'<label class="custom-radio"><input type="radio" name="radio_801793" value="802817" class="required"><span>Yes</span></label>' + 
-'<label class="custom-radio"><input type="radio" name="radio_801793" value="803841" class="required"><span>No</span></label>' + 
-'</div>' + 
+'<div class="field text CustomTransactionField_826369" >' + 
+'<label for="CustomTransactionField_826369"><span class="label">For Couples Donations, please enter your guests\' info below (Name, Email, Phone Number):</span></label>' + 
+'<input id="CustomTransactionField_826369" name="CustomTransactionField_826369" type="text" maxlength="255"></input>' + 
 '</div>' + 
 '' + 
 '</div>' + 
@@ -1052,7 +1045,7 @@ Bloomerang.Data.PayPal.IsPayPalPaymentMethodVaultingEnabled = false;Bloomerang.D
                   hbcuGraduate: val(".registration-form #CustomTransactionField_789505"),
                   auctionParticipation: getSelectText(".registration-form #CustomTransactionField_790529"),
                   auctionItems: getCheckboxSelections('CustomTransactionField_793601'),
-                  attendingWithGuest: getSelectText(".registration-form #CustomTransactionField_801793"),
+                  guestInfo: val(".registration-form #CustomTransactionField_826369"),
                   comments: val(".registration-form #comment"),
                   timestamp: new Date().toLocaleString(),
                   registrationType: registrationTypeInput.data("short-name") || "",
