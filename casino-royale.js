@@ -1564,11 +1564,8 @@ Bloomerang.Data.PayPal.IsPayPalPaymentMethodVaultingEnabled = false;Bloomerang.D
 
       // Select dropdown
       '.registration-form .field select {',
-      '  background-color: rgba(255,255,255,0.12) !important;',
-      '  background-image: url("data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'12\' height=\'12\' viewBox=\'0 0 12 12\'%3E%3Cpath fill=\'white\' d=\'M6 8L1 3h10z\'/%3E%3C/svg%3E") !important;',
-      '  background-repeat: no-repeat !important;',
-      '  background-position: right 16px center !important;',
-      '  padding-right: 40px !important;',
+      '  background: rgba(255,255,255,0.12) url("data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'16\' height=\'16\' viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'white\' stroke-width=\'2.5\' stroke-linecap=\'round\' stroke-linejoin=\'round\'%3E%3Cpolyline points=\'6 9 12 15 18 9\'%3E%3C/polyline%3E%3C/svg%3E") no-repeat right 16px center / 16px 16px !important;',
+      '  padding-right: 44px !important;',
       '  cursor: pointer !important;',
       '}',
 
@@ -1640,6 +1637,10 @@ Bloomerang.Data.PayPal.IsPayPalPaymentMethodVaultingEnabled = false;Bloomerang.D
       '  border-bottom: none !important;',
       '}',
 
+      '.registration-form .field .checkbox.selected + .checkbox.selected {',
+      '  border-top: none !important;',
+      '}',
+
       '.registration-form .field .checkbox:hover {',
       '  background: rgba(255,255,255,0.06) !important;',
       '}',
@@ -1664,6 +1665,11 @@ Bloomerang.Data.PayPal.IsPayPalPaymentMethodVaultingEnabled = false;Bloomerang.D
       '.registration-form .field .checkbox.selected {',
       '  background: linear-gradient(135deg, rgba(216,82,168,0.3), rgba(6,59,167,0.3)) !important;',
       '  color: #fff !important;',
+      '  border-bottom-color: transparent !important;',
+      '}',
+
+      '.registration-form .field .checkboxes:has(.checkbox.selected) {',
+      '  border-color: transparent !important;',
       '}',
 
       '.registration-form .field .checkbox.selected::before {',
@@ -1779,26 +1785,28 @@ Bloomerang.Data.PayPal.IsPayPalPaymentMethodVaultingEnabled = false;Bloomerang.D
 
       '.btn-submit-registration,',
       'input.btn-submit-registration {',
-      '  background: linear-gradient(90deg, #d852a8 0%, #063ba7 100%) !important;',
-      '  color: #ffffff !important;',
+      '  background: #ffffff !important;',
+      '  color: #1a1a2e !important;',
       '  font-family: "Inter", sans-serif !important;',
-      '  font-size: 1rem !important;',
-      '  font-weight: 600 !important;',
+      '  font-size: 1.05rem !important;',
+      '  font-weight: 700 !important;',
       '  letter-spacing: 0.03em !important;',
       '  border: none !important;',
       '  border-radius: 30px !important;',
-      '  padding: 16px 40px !important;',
+      '  padding: 18px 40px !important;',
       '  width: 100% !important;',
       '  max-width: 100% !important;',
       '  cursor: pointer !important;',
       '  transition: all 0.3s ease !important;',
-      '  box-shadow: 0 5px 20px rgba(216,82,168,0.3) !important;',
+      '  box-shadow: 0 5px 25px rgba(255,255,255,0.25) !important;',
       '  height: auto !important;',
       '  line-height: 1.4 !important;',
       '}',
 
       '.btn-submit-registration:hover {',
-      '  box-shadow: 0 10px 30px rgba(216,82,168,0.5) !important;',
+      '  background: #f0f0f0 !important;',
+      '  box-shadow: 0 10px 35px rgba(255,255,255,0.4) !important;',
+      '  transform: translateY(-1px) !important;',
       '}',
 
       '.btn-submit-registration.disabled,',
