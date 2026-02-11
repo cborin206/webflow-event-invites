@@ -132,10 +132,10 @@ var insertForm750592 = function() {
 '    <div class="section registrationType">' + 
 '      <h3>Casino Royale Fundraiser Registration</h3>' + 
 '      <div class="field radio 752640 required" >' + 
-'<label for="752640"><input id="752640" name="registration-type" class="required" type="radio" value="750.000000" maxlength="255" data-short-name="Individual Donation" data-ticket-quantity="1" data-registration-type-value="749569" data-non-deductible-amount="0.000000"></input><span class="label">$750.00 - Individual Donation: Individual Ticket</span></label>' + 
+'<label for="752640"><input id="752640" name="registration-type" class="required" type="radio" value="750.000000" maxlength="255" data-short-name="Individual Donation" data-ticket-quantity="1" data-registration-type-value="749569" data-non-deductible-amount="0.000000"></input><span class="label">$750.00 - Individual Donation</span></label>' + 
 '</div>' + 
 '<div class="field radio 752641 required" >' + 
-'<label for="752641"><input id="752641" name="registration-type" class="required" type="radio" value="1250.000000" maxlength="255" data-short-name="Couples Donation" data-ticket-quantity="2" data-registration-type-value="749570" data-non-deductible-amount="0.000000"></input><span class="label">$1,250.00 - Couples Donation: Couples Ticket</span></label>' + 
+'<label for="752641"><input id="752641" name="registration-type" class="required" type="radio" value="1250.000000" maxlength="255" data-short-name="Couples Donation" data-ticket-quantity="2" data-registration-type-value="749570" data-non-deductible-amount="0.000000"></input><span class="label">$1,250.00 - Couples Donation</span></label>' + 
 '</div>' + 
 '<div class="field radio cannot-attend required" >' + 
 '<label for="cannot-attend"><input id="cannot-attend" name="registration-type" class="required" type="radio" maxlength="255" data-short-name="Donation" data-registration-type-value="749571"></input><span class="label">Sorry, I can\'t attend, but I would like to show my support by making a donation</span></label>' + 
@@ -559,7 +559,7 @@ var insertForm750592 = function() {
 '    <div class="section custom-fields">' + 
 '      <h3>Additional Information</h3>' + 
 '      <div class="field text CustomTransactionField_761857 required" >' + 
-'<label for="CustomTransactionField_761857"><span class="label">Entity</span><span class="required-star">*</span></label>' + 
+'<label for="CustomTransactionField_761857"><span class="label">Business Entity</span><span class="required-star">*</span></label>' + 
 '<input id="CustomTransactionField_761857" name="CustomTransactionField_761857" class="required" type="text" maxlength="255"></input>' + 
 '</div>' + 
 '<div class="field text CustomTransactionField_762881" >' + 
@@ -693,7 +693,7 @@ var insertForm750592 = function() {
 '</div>' + 
 '</div>' + 
 '<div class="field text CustomTransactionField_801793 required" >' + 
-'<label for="CustomTransactionField_801793">Will you be attending with a guest?<span class="required-star">*</span></label>' + 
+'<label for="CustomTransactionField_801793">For Couples Donations, please enter your guests\' info below(Name, Email, Phone, Number):<span class="required-star">*</span></label>' + 
 '<select id="CustomTransactionField_801793" name="CustomTransactionField_801793" class="required" style="display:none"><option value=""></option>' + 
 '<option value="803841">No</option>' + 
 '<option value="802817">Yes</option>' + 
