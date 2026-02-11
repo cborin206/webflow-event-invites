@@ -132,7 +132,7 @@ var insertForm815104 = function() {
 '    <div class="section registrationType">' + 
 '      <h3>Fireside Chat on Philanthropy with Robert F. Smith Registration</h3>' + 
 '      <div class="field radio 818176 required" >' + 
-'<label for="818176"><input id="818176" name="registration-type" class="required" type="radio" value="1000.000000" maxlength="255" data-short-name="Fireside Chat Ticket" data-ticket-quantity="1" data-registration-type-value="814081" data-non-deductible-amount="0.000000"></input><span class="label">$1,000.00 - Fireside Chat Ticket: Fireside Chat Ticket</span></label>' + 
+'<label for="818176"><input id="818176" name="registration-type" class="required" type="radio" value="1000.000000" maxlength="255" data-short-name="Fireside Chat Ticket" data-ticket-quantity="1" data-registration-type-value="814081" data-non-deductible-amount="0.000000"></input><span class="label">$1,000.00 - Fireside Chat Ticket</span></label>' + 
 '</div>' + 
 '<div class="field radio cannot-attend required" >' + 
 '<label for="cannot-attend"><input id="cannot-attend" name="registration-type" class="required" type="radio" maxlength="255" data-short-name="Donation" data-registration-type-value="749571"></input><span class="label">Sorry, I can\'t attend, but I would like to show my support by making a donation</span></label>' + 
@@ -556,22 +556,24 @@ var insertForm815104 = function() {
 '    <div class="section custom-fields">' + 
 '      <h3>Additional Information</h3>' + 
 '      <div class="field text CustomTransactionField_761857 required" >' + 
-'<label for="CustomTransactionField_761857"><span class="label">Entity</span><span class="required-star">*</span></label>' + 
+'<label for="CustomTransactionField_761857"><span class="label">Business Entity</span><span class="required-star">*</span></label>' + 
 '<input id="CustomTransactionField_761857" name="CustomTransactionField_761857" class="required" type="text" maxlength="255"></input>' + 
 '</div>' + 
-'<div class="field text CustomTransactionField_762881 required" >' + 
-'<label for="CustomTransactionField_762881"><span class="label">Years in Business</span><span class="required-star">*</span></label>' + 
-'<input id="CustomTransactionField_762881" name="CustomTransactionField_762881" class="required" type="text" maxlength="255"></input>' + 
+'<div class="field text CustomTransactionField_762881" >' + 
+'<label for="CustomTransactionField_762881"><span class="label">Years in Business</span></label>' + 
+'<input id="CustomTransactionField_762881" name="CustomTransactionField_762881" type="text" maxlength="255"></input>' + 
 '</div>' + 
 '<div class="field text CustomTransactionField_763905" >' + 
 '<label for="CustomTransactionField_763905">Number of Employees</label>' + 
 '<select id="CustomTransactionField_763905" name="CustomTransactionField_763905" style="display:none"><option value=""></option>' + 
 '<option value="765953">>1,000</option>' + 
 '<option value="766977">>5,000</option>' + 
+'<option value="828417">>100</option>' + 
 '<option value="764929">>500</option>' + 
 '<option value="768001">10,000+</option>' + 
 '</select>' + 
 '<div class="custom-radio-group" data-target="CustomTransactionField_763905">' + 
+'<label class="custom-radio"><input type="radio" name="radio_763905" value="828417"><span>&gt;100</span></label>' + 
 '<label class="custom-radio"><input type="radio" name="radio_763905" value="764929"><span>&gt;500</span></label>' + 
 '<label class="custom-radio"><input type="radio" name="radio_763905" value="765953"><span>&gt;1,000</span></label>' + 
 '<label class="custom-radio"><input type="radio" name="radio_763905" value="766977"><span>&gt;5,000</span></label>' + 
@@ -586,11 +588,15 @@ var insertForm815104 = function() {
 '                              </a>' + 
 '<a href="javascript:void(0)" class="checkbox" data-id="806913" onclick="var box = jQuery(this).children(\'input\'); box.prop(\'checked\', !box.prop(\'checked\'));jQuery(box).trigger(\'change\'); return false;">' + 
 '                                <input type="checkbox" value="806913" onchange="jQuery(this).closest(\'.checkbox\').toggleClass(\'selected\')">' + 
-'                                <span class="text">C-Suite leader at a major corporation</span>' + 
+'                                <span class="text">C-Suite leader</span>' + 
 '                              </a>' + 
 '<a href="javascript:void(0)" class="checkbox" data-id="809985" onclick="var box = jQuery(this).children(\'input\'); box.prop(\'checked\', !box.prop(\'checked\'));jQuery(box).trigger(\'change\'); return false;">' + 
 '                                <input type="checkbox" value="809985" onchange="jQuery(this).closest(\'.checkbox\').toggleClass(\'selected\')">' + 
 '                                <span class="text">Entrepreneur</span>' + 
+'                              </a>' + 
+'<a href="javascript:void(0)" class="checkbox" data-id="811009" onclick="var box = jQuery(this).children(\'input\'); box.prop(\'checked\', !box.prop(\'checked\'));jQuery(box).trigger(\'change\'); return false;">' + 
+'                                <input type="checkbox" value="811009" onchange="jQuery(this).closest(\'.checkbox\').toggleClass(\'selected\')">' + 
+'                                <span class="text">Other</span>' + 
 '                              </a>' + 
 '<a href="javascript:void(0)" class="checkbox" data-id="805889" onclick="var box = jQuery(this).children(\'input\'); box.prop(\'checked\', !box.prop(\'checked\'));jQuery(box).trigger(\'change\'); return false;">' + 
 '                                <input type="checkbox" value="805889" onchange="jQuery(this).closest(\'.checkbox\').toggleClass(\'selected\')">' + 
@@ -599,10 +605,6 @@ var insertForm815104 = function() {
 '<a href="javascript:void(0)" class="checkbox" data-id="808961" onclick="var box = jQuery(this).children(\'input\'); box.prop(\'checked\', !box.prop(\'checked\'));jQuery(box).trigger(\'change\'); return false;">' + 
 '                                <input type="checkbox" value="808961" onchange="jQuery(this).closest(\'.checkbox\').toggleClass(\'selected\')">' + 
 '                                <span class="text">Sponsor/Partner</span>' + 
-'                              </a>' + 
-'<a href="javascript:void(0)" class="checkbox" data-id="811009" onclick="var box = jQuery(this).children(\'input\'); box.prop(\'checked\', !box.prop(\'checked\'));jQuery(box).trigger(\'change\'); return false;">' + 
-'                                <input type="checkbox" value="811009" onchange="jQuery(this).closest(\'.checkbox\').toggleClass(\'selected\')">' + 
-'                                <span class="text">Other</span>' + 
 '                              </a>' + 
 '</div>' + 
 '</div>' + 
@@ -622,7 +624,7 @@ var insertForm815104 = function() {
 '                              </a>' + 
 '<a href="javascript:void(0)" class="checkbox" data-id="781313" onclick="var box = jQuery(this).children(\'input\'); box.prop(\'checked\', !box.prop(\'checked\'));jQuery(box).trigger(\'change\'); return false;">' + 
 '                                <input type="checkbox" value="781313" onchange="jQuery(this).closest(\'.checkbox\').toggleClass(\'selected\')">' + 
-'                                <span class="text">Invitation from Ascend</span>' + 
+'                                <span class="text">Invitation from a colleague or friend</span>' + 
 '                              </a>' + 
 '</div>' + 
 '</div>' + 
@@ -654,20 +656,20 @@ var insertForm815104 = function() {
 '<label for="CustomTransactionField_789505"><span class="label">Are you an HBCU graduate? If yes, indicate school.</span><span class="required-star">*</span></label>' + 
 '<input id="CustomTransactionField_789505" name="CustomTransactionField_789505" class="required" type="text" maxlength="255"></input>' + 
 '</div>' + 
-'<div class="field text CustomTransactionField_801793 required" >' + 
+'<div class="field text CustomTransactionField_801793 required" style="display:none">' + 
 '<label for="CustomTransactionField_801793">Will you be attending with a guest?<span class="required-star">*</span></label>' + 
-'<select id="CustomTransactionField_801793" name="CustomTransactionField_801793" class="required" style="display:none"><option value=""></option>' + 
+'<select id="CustomTransactionField_801793" name="CustomTransactionField_801793" style="display:none"><option value=""></option>' + 
 '<option value="803841">No</option>' + 
 '<option value="802817">Yes</option>' + 
 '</select>' + 
 '<div class="custom-radio-group" data-target="CustomTransactionField_801793">' + 
-'<label class="custom-radio"><input type="radio" name="radio_801793" value="802817" class="required"><span>Yes</span></label>' + 
-'<label class="custom-radio"><input type="radio" name="radio_801793" value="803841" class="required"><span>No</span></label>' + 
+'<label class="custom-radio"><input type="radio" name="radio_801793" value="802817"><span>Yes</span></label>' + 
+'<label class="custom-radio"><input type="radio" name="radio_801793" value="803841"><span>No</span></label>' + 
 '</div>' + 
 '</div>' + 
 '' + 
 '</div>' + 
-'    <div class="section comment">' + 
+'    <div class="section comment" style="display:none">' + 
 '      <div class="field text comment" >' + 
 '<label for="comment"><span class="label">Comments</span></label>' + 
 '<textarea id="comment" name="comment" type="text" value="Comments"></textarea>' + 
