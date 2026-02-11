@@ -1,0 +1,390 @@
+/* ============================================
+   Casino Royale Fundraiser - Bloomerang Form Overrides
+   Matches AWARE FEST sponsor form aesthetic
+   ============================================ */
+
+/* --- Form Container --- */
+#registration-form-container {
+  font-family: 'Inter', sans-serif;
+  max-width: 100%;
+  padding: 10px 0;
+}
+
+.registration-form {
+  max-width: 100%;
+}
+
+/* --- Section Headers --- */
+.registration-form h3 {
+  color: #ffffff !important;
+  font-family: 'Inter', sans-serif;
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 16px;
+  letter-spacing: 0.02em;
+}
+
+/* --- Field Wrappers --- */
+.registration-form .field {
+  padding: 6px 0 !important;
+}
+
+.registration-form section {
+  padding: 8px 0 !important;
+}
+
+/* --- Labels --- */
+.registration-form label {
+  color: rgba(255, 255, 255, 0.9) !important;
+  font-family: 'Inter', sans-serif !important;
+  font-size: 0.85rem !important;
+  font-weight: 400 !important;
+  margin-bottom: 4px !important;
+  letter-spacing: 0.02em;
+}
+
+.registration-form label .label {
+  color: rgba(255, 255, 255, 0.9) !important;
+}
+
+.registration-form .field .required-star {
+  color: rgba(255, 180, 220, 0.9) !important;
+}
+
+/* --- Error Labels --- */
+.registration-form label.error,
+.registration-form #card-errors {
+  color: #ff6b8a !important;
+  font-size: 0.8rem !important;
+  padding: 4px 16px !important;
+  background: rgba(255, 0, 0, 0.1);
+  border-radius: 8px;
+  margin-top: 4px;
+}
+
+/* --- Text Inputs, Selects, Textareas --- */
+.registration-form .field input[type="text"],
+.registration-form .field input[type="email"],
+.registration-form .field input[type="tel"],
+.registration-form .field input[type="number"],
+.registration-form .field input[type="date"],
+.registration-form .field select,
+.registration-form .field textarea,
+.registration-form #card-element {
+  background: rgba(255, 255, 255, 0.15) !important;
+  border: 1.5px solid rgba(255, 255, 255, 0.3) !important;
+  border-radius: 30px !important;
+  color: #ffffff !important;
+  font-family: 'Inter', sans-serif !important;
+  font-size: 0.95rem !important;
+  padding: 14px 20px !important;
+  max-width: 100% !important;
+  width: 100% !important;
+  box-sizing: border-box !important;
+  outline: none !important;
+  transition: all 0.3s ease !important;
+  -webkit-appearance: none !important;
+  appearance: none !important;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+/* Textarea gets less rounding */
+.registration-form .field textarea {
+  border-radius: 20px !important;
+  min-height: 100px;
+  resize: vertical;
+}
+
+/* Focus state */
+.registration-form .field input:focus,
+.registration-form .field select:focus,
+.registration-form .field textarea:focus {
+  background: rgba(255, 255, 255, 0.22) !important;
+  border-color: rgba(255, 255, 255, 0.5) !important;
+  box-shadow: 0 0 20px rgba(216, 82, 168, 0.15) !important;
+}
+
+/* Placeholder text */
+.registration-form .field input::placeholder,
+.registration-form .field select::placeholder,
+.registration-form .field textarea::placeholder {
+  color: rgba(255, 255, 255, 0.6) !important;
+}
+
+/* Select dropdown arrow */
+.registration-form .field select {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='white' d='M6 8L1 3h10z'/%3E%3C/svg%3E") !important;
+  background-repeat: no-repeat !important;
+  background-position: right 16px center !important;
+  padding-right: 40px !important;
+  cursor: pointer !important;
+}
+
+.registration-form .field select option {
+  background: #4a2d6b;
+  color: #ffffff;
+}
+
+/* --- Radio Buttons (Registration Types) --- */
+.registration-form .field.radio label {
+  display: flex !important;
+  align-items: center !important;
+  background: rgba(255, 255, 255, 0.1) !important;
+  border: 1.5px solid rgba(255, 255, 255, 0.25) !important;
+  border-radius: 30px !important;
+  padding: 14px 20px !important;
+  margin-bottom: 8px !important;
+  cursor: pointer !important;
+  transition: all 0.3s ease !important;
+  color: rgba(255, 255, 255, 0.9) !important;
+}
+
+.registration-form .field.radio label:hover {
+  background: rgba(255, 255, 255, 0.18) !important;
+  border-color: rgba(255, 255, 255, 0.4) !important;
+}
+
+.registration-form .field.radio input {
+  width: auto !important;
+  margin-right: 12px !important;
+  accent-color: #d852a8 !important;
+  transform: scale(1.2);
+}
+
+.registration-form .field.radio label .label {
+  color: rgba(255, 255, 255, 0.95) !important;
+  font-size: 0.95rem !important;
+}
+
+/* --- Checkboxes --- */
+.registration-form .field.checkbox label {
+  color: rgba(255, 255, 255, 0.9) !important;
+}
+
+.registration-form .field .checkboxes {
+  max-width: 100% !important;
+  border: 1.5px solid rgba(255, 255, 255, 0.25) !important;
+  border-radius: 16px !important;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.08) !important;
+}
+
+.registration-form .field .checkbox {
+  color: rgba(255, 255, 255, 0.9) !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+  padding: 10px 16px !important;
+  height: auto !important;
+  line-height: 1.4 !important;
+}
+
+.registration-form .field .checkbox.selected {
+  background: linear-gradient(135deg, #d852a8, #063ba7) !important;
+  color: #fff !important;
+}
+
+/* --- Registration Summary Table --- */
+.registration-form .registration-summary {
+  color: #ffffff !important;
+  width: 100% !important;
+  border-collapse: separate !important;
+  border-spacing: 0 !important;
+  background: rgba(255, 255, 255, 0.08) !important;
+  border-radius: 16px !important;
+  overflow: hidden;
+  margin: 12px 0 !important;
+}
+
+.registration-form .registration-summary th {
+  color: rgba(255, 255, 255, 0.7) !important;
+  font-weight: 500 !important;
+  font-size: 0.8rem !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.05em !important;
+  padding: 12px 12px !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15) !important;
+}
+
+.registration-form .registration-summary td {
+  color: #ffffff !important;
+  padding: 12px 12px !important;
+}
+
+.registration-form .registration-summary .summary-total {
+  border-top: 1.5px solid rgba(255, 255, 255, 0.3) !important;
+  font-weight: 600 !important;
+}
+
+.registration-form .registration-summary #numberOfRegistrations {
+  background: rgba(255, 255, 255, 0.15) !important;
+  border: 1px solid rgba(255, 255, 255, 0.3) !important;
+  border-radius: 10px !important;
+  color: #ffffff !important;
+  padding: 6px 8px !important;
+  width: 50px !important;
+  text-align: center !important;
+}
+
+.registration-form .registration-summary input.amount-field {
+  background: rgba(255, 255, 255, 0.15) !important;
+  border: 1px solid rgba(255, 255, 255, 0.3) !important;
+  border-radius: 10px !important;
+  color: #ffffff !important;
+  padding: 6px 8px !important;
+  width: 80px !important;
+}
+
+/* --- Stripe Card Element --- */
+.registration-form .field .StripeElement {
+  background: rgba(255, 255, 255, 0.15) !important;
+  border: 1.5px solid rgba(255, 255, 255, 0.3) !important;
+  border-radius: 30px !important;
+  padding: 14px 20px !important;
+  max-width: 100% !important;
+  width: 100% !important;
+  box-sizing: border-box !important;
+  display: block !important;
+  transition: all 0.3s ease !important;
+}
+
+.registration-form .field .StripeElement--focus {
+  background: rgba(255, 255, 255, 0.22) !important;
+  border-color: rgba(255, 255, 255, 0.5) !important;
+  box-shadow: 0 0 20px rgba(216, 82, 168, 0.15) !important;
+}
+
+/* --- Submit Button --- */
+.btn-group {
+  margin-top: 20px !important;
+  text-align: center !important;
+}
+
+.btn-submit-registration {
+  background: linear-gradient(90deg, #d852a8 0%, #063ba7 100%) !important;
+  color: #ffffff !important;
+  font-family: 'Inter', sans-serif !important;
+  font-size: 1rem !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.03em !important;
+  border: none !important;
+  border-radius: 30px !important;
+  padding: 16px 40px !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  cursor: pointer !important;
+  transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1) !important;
+  box-shadow: 0 5px 20px rgba(216, 82, 168, 0.3) !important;
+}
+
+.btn-submit-registration:hover {
+  box-shadow: 0 10px 30px rgba(216, 82, 168, 0.5) !important;
+  transform: translateY(-1px);
+}
+
+.btn-submit-registration.disabled,
+.btn-submit-registration:disabled {
+  opacity: 0.6 !important;
+  cursor: not-allowed !important;
+}
+
+/* --- Error Container --- */
+.registration-form .errors {
+  border: 1.5px solid rgba(255, 100, 130, 0.5) !important;
+  background: rgba(255, 0, 0, 0.1) !important;
+  color: #ff6b8a !important;
+  border-radius: 16px !important;
+  padding: 14px 20px !important;
+  margin-bottom: 16px !important;
+}
+
+/* --- Consent Section --- */
+.registration-form .section.consent .field.checkbox label {
+  color: rgba(255, 255, 255, 0.85) !important;
+  font-size: 0.85rem !important;
+}
+
+/* --- Processing State --- */
+#registration-processing-container {
+  color: #ffffff !important;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+#registration-processing-container h2 {
+  color: #ffffff !important;
+}
+
+#registration-processing-container p {
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+
+/* --- Success State --- */
+.donation-success {
+  text-align: center;
+  padding: 30px 20px;
+}
+
+.donation-success h2 {
+  color: #ffffff !important;
+}
+
+.donation-success p {
+  color: rgba(255, 255, 255, 0.85) !important;
+}
+
+/* --- Sidenotes --- */
+.registration-form .field .sidenote {
+  color: rgba(255, 255, 255, 0.5) !important;
+  font-size: 0.75rem !important;
+}
+
+/* --- Additional Amount Field --- */
+.registration-form .field.additional-amount {
+  padding-left: 0 !important;
+}
+
+.registration-form #additional-amount {
+  width: 100% !important;
+}
+
+/* --- Hidden Utility --- */
+.registration-form .hidden {
+  display: none !important;
+}
+
+/* --- reCAPTCHA Alignment --- */
+.registration-form .section.captcha {
+  display: flex;
+  justify-content: center;
+  padding: 12px 0 !important;
+}
+
+/* --- Mobile Responsive --- */
+@media (max-width: 768px) {
+  .registration-form .field input[type="text"],
+  .registration-form .field input[type="email"],
+  .registration-form .field input[type="tel"],
+  .registration-form .field input[type="number"],
+  .registration-form .field input[type="date"],
+  .registration-form .field select,
+  .registration-form .field textarea,
+  .registration-form #card-element,
+  .registration-form .field .StripeElement {
+    padding: 12px 16px !important;
+    font-size: 0.9rem !important;
+  }
+
+  .registration-form .field.radio label {
+    padding: 12px 16px !important;
+  }
+
+  .btn-submit-registration {
+    padding: 14px 30px !important;
+  }
+
+  .registration-form .registration-summary th,
+  .registration-form .registration-summary td {
+    padding: 8px 8px !important;
+    font-size: 0.85rem !important;
+  }
+}
