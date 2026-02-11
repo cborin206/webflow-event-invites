@@ -705,7 +705,7 @@ var insertForm750592 = function() {
 '</div>' + 
 '' + 
 '</div>' + 
-'    <div class="section comment">' + 
+'    <div class="section comment" style="display:none">' + 
 '      <div class="field text comment" >' + 
 '<label for="comment"><span class="label">Comments</span></label>' + 
 '<textarea id="comment" name="comment" type="text" value="Comments"></textarea>' + 
