@@ -568,12 +568,18 @@ var insertForm750592 = function() {
 '</div>' + 
 '<div class="field text CustomTransactionField_763905" >' + 
 '<label for="CustomTransactionField_763905">Number of Employees</label>' + 
-'<select id="CustomTransactionField_763905" name="CustomTransactionField_763905"><option value=""></option>' + 
+'<select id="CustomTransactionField_763905" name="CustomTransactionField_763905" style="display:none"><option value=""></option>' + 
 '<option value="765953">>1,000</option>' + 
 '<option value="766977">>5,000</option>' + 
 '<option value="764929">>500</option>' + 
 '<option value="768001">10,000+</option>' + 
 '</select>' + 
+'<div class="custom-radio-group" data-target="CustomTransactionField_763905">' + 
+'<label class="custom-radio"><input type="radio" name="radio_763905" value="764929"><span>&gt;500</span></label>' + 
+'<label class="custom-radio"><input type="radio" name="radio_763905" value="765953"><span>&gt;1,000</span></label>' + 
+'<label class="custom-radio"><input type="radio" name="radio_763905" value="766977"><span>&gt;5,000</span></label>' + 
+'<label class="custom-radio"><input type="radio" name="radio_763905" value="768001"><span>10,000+</span></label>' + 
+'</div>' + 
 '</div>' + 
 '<div class="field text CustomTransactionField_804865 required" >' + 
 '<label for="CustomTransactionField_804865">Which best describes your professional background?<span class="required-star">*</span></label>' + 
@@ -653,10 +659,14 @@ var insertForm750592 = function() {
 '</div>' + 
 '<div class="field text CustomTransactionField_790529 required" >' + 
 '<label for="CustomTransactionField_790529">Do you plan to participate in the Silent and Live Auction?<span class="required-star">*</span></label>' + 
-'<select id="CustomTransactionField_790529" name="CustomTransactionField_790529" class="required"><option value=""></option>' + 
+'<select id="CustomTransactionField_790529" name="CustomTransactionField_790529" class="required" style="display:none"><option value=""></option>' + 
 '<option value="792577">No</option>' + 
 '<option value="791553">Yes</option>' + 
 '</select>' + 
+'<div class="custom-radio-group" data-target="CustomTransactionField_790529">' + 
+'<label class="custom-radio"><input type="radio" name="radio_790529" value="791553" class="required"><span>Yes</span></label>' + 
+'<label class="custom-radio"><input type="radio" name="radio_790529" value="792577" class="required"><span>No</span></label>' + 
+'</div>' + 
 '</div>' + 
 '<div class="field text CustomTransactionField_793601 required" >' + 
 '<label for="CustomTransactionField_793601">What types of items would you be most excited to bid on at an auction?<span class="required-star">*</span></label>' + 
@@ -680,10 +690,14 @@ var insertForm750592 = function() {
 '</div>' + 
 '<div class="field text CustomTransactionField_801793 required" >' + 
 '<label for="CustomTransactionField_801793">Will you be attending with a guest?<span class="required-star">*</span></label>' + 
-'<select id="CustomTransactionField_801793" name="CustomTransactionField_801793" class="required"><option value=""></option>' + 
+'<select id="CustomTransactionField_801793" name="CustomTransactionField_801793" class="required" style="display:none"><option value=""></option>' + 
 '<option value="803841">No</option>' + 
 '<option value="802817">Yes</option>' + 
 '</select>' + 
+'<div class="custom-radio-group" data-target="CustomTransactionField_801793">' + 
+'<label class="custom-radio"><input type="radio" name="radio_801793" value="802817" class="required"><span>Yes</span></label>' + 
+'<label class="custom-radio"><input type="radio" name="radio_801793" value="803841" class="required"><span>No</span></label>' + 
+'</div>' + 
 '</div>' + 
 '' + 
 '</div>' + 
@@ -1680,6 +1694,51 @@ Bloomerang.Data.PayPal.IsPayPalPaymentMethodVaultingEnabled = false;Bloomerang.D
       '  display: inline !important;',
       '}',
 
+      // ========== CUSTOM RADIO GROUPS (converted dropdowns) ==========
+      '.registration-form .custom-radio-group {',
+      '  display: flex !important;',
+      '  flex-wrap: wrap !important;',
+      '  gap: 8px !important;',
+      '  margin-top: 6px !important;',
+      '}',
+
+      '.registration-form .custom-radio-group .custom-radio {',
+      '  display: inline-flex !important;',
+      '  align-items: center !important;',
+      '  background: rgba(255,255,255,0.08) !important;',
+      '  border: 1.5px solid rgba(255,255,255,0.25) !important;',
+      '  border-radius: 30px !important;',
+      '  padding: 8px 18px !important;',
+      '  cursor: pointer !important;',
+      '  transition: all 0.25s ease !important;',
+      '  backdrop-filter: blur(6px) !important;',
+      '  -webkit-backdrop-filter: blur(6px) !important;',
+      '}',
+
+      '.registration-form .custom-radio-group .custom-radio:hover {',
+      '  background: rgba(255,255,255,0.15) !important;',
+      '  border-color: rgba(255,255,255,0.4) !important;',
+      '}',
+
+      '.registration-form .custom-radio-group .custom-radio input[type="radio"] {',
+      '  accent-color: #d852a8 !important;',
+      '  margin-right: 8px !important;',
+      '  width: auto !important;',
+      '  cursor: pointer !important;',
+      '}',
+
+      '.registration-form .custom-radio-group .custom-radio span {',
+      '  color: rgba(255,255,255,0.95) !important;',
+      '  font-size: 0.9rem !important;',
+      '  font-family: "Inter", sans-serif !important;',
+      '  display: inline !important;',
+      '}',
+
+      '.registration-form .custom-radio-group .custom-radio:has(input:checked) {',
+      '  background: rgba(255,255,255,0.18) !important;',
+      '  border-color: rgba(216,82,168,0.6) !important;',
+      '}',
+
       // ========== CHECKBOXES (MULTI-SELECT) ==========
       '.registration-form .field .checkboxes {',
       '  max-width: 100% !important;',
@@ -1996,4 +2055,26 @@ Bloomerang.Data.PayPal.IsPayPalPaymentMethodVaultingEnabled = false;Bloomerang.D
   if (document.getElementById('registration-form-container')) {
     applyTheme();
   }
+
+  // === RADIO SYNC: sync custom radio buttons to hidden selects ===
+  function initRadioSync() {
+    var groups = document.querySelectorAll('.custom-radio-group');
+    if (!groups.length) return;
+    groups.forEach(function(group) {
+      var radios = group.querySelectorAll('input[type="radio"]');
+      var targetId = group.getAttribute('data-target');
+      var targetSelect = document.getElementById(targetId);
+      radios.forEach(function(radio) {
+        radio.addEventListener('change', function() {
+          if (targetSelect) {
+            targetSelect.value = this.value;
+            jQuery('#' + targetId).trigger('change');
+          }
+        });
+      });
+    });
+  }
+  setTimeout(initRadioSync, 1500);
+  setTimeout(initRadioSync, 3000);
+  setTimeout(initRadioSync, 5500);
 })();
