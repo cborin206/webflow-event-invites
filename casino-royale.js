@@ -130,7 +130,7 @@ var insertForm750592 = function() {
 '  <form id="registration-form" class="registration-form" method="post" onsubmit="event.preventDefault(); collectPayment();">' + 
 '    <div class="errors hidden"></div>' + 
 '    <div class="section registrationType">' + 
-'      <h3>Casino Royale Fundraiser Registration</h3>' + 
+'      <h3 style="display:none">Casino Royale Fundraiser Registration</h3>' + 
 '      <div class="field radio 752640 required" >' + 
 '<label for="752640"><input id="752640" name="registration-type" class="required" type="radio" value="750.000000" maxlength="255" data-short-name="Individual Donation" data-ticket-quantity="1" data-registration-type-value="749569" data-non-deductible-amount="0.000000"></input><span class="label">$750.00 - Individual Donation</span></label>' + 
 '</div>' + 
@@ -569,14 +569,18 @@ var insertForm750592 = function() {
 '<div class="field text CustomTransactionField_763905" >' + 
 '<label for="CustomTransactionField_763905">Number of Employees</label>' + 
 '<select id="CustomTransactionField_763905" name="CustomTransactionField_763905" style="display:none"><option value=""></option>' + 
+'<option value="835585"><100</option>' + 
 '<option value="765953">>1,000</option>' + 
 '<option value="766977">>5,000</option>' + 
 '<option value="828417">>100</option>' + 
+'<option value="836609">>250</option>' + 
 '<option value="764929">>500</option>' + 
 '<option value="768001">10,000+</option>' + 
 '</select>' + 
 '<div class="custom-radio-group" data-target="CustomTransactionField_763905">' + 
+'<label class="custom-radio"><input type="radio" name="radio_763905" value="835585"><span>&lt;100</span></label>' + 
 '<label class="custom-radio"><input type="radio" name="radio_763905" value="828417"><span>&gt;100</span></label>' + 
+'<label class="custom-radio"><input type="radio" name="radio_763905" value="836609"><span>&gt;250</span></label>' + 
 '<label class="custom-radio"><input type="radio" name="radio_763905" value="764929"><span>&gt;500</span></label>' + 
 '<label class="custom-radio"><input type="radio" name="radio_763905" value="765953"><span>&gt;1,000</span></label>' + 
 '<label class="custom-radio"><input type="radio" name="radio_763905" value="766977"><span>&gt;5,000</span></label>' + 
@@ -591,7 +595,7 @@ var insertForm750592 = function() {
 '                              </a>' + 
 '<a href="javascript:void(0)" class="checkbox" data-id="806913" onclick="var box = jQuery(this).children(\'input\'); box.prop(\'checked\', !box.prop(\'checked\'));jQuery(box).trigger(\'change\'); return false;">' + 
 '                                <input type="checkbox" value="806913" onchange="jQuery(this).closest(\'.checkbox\').toggleClass(\'selected\')">' + 
-'                                <span class="text">C-Suite leader</span>' + 
+'                                <span class="text">C-Suite Leader</span>' + 
 '                              </a>' + 
 '<a href="javascript:void(0)" class="checkbox" data-id="809985" onclick="var box = jQuery(this).children(\'input\'); box.prop(\'checked\', !box.prop(\'checked\'));jQuery(box).trigger(\'change\'); return false;">' + 
 '                                <input type="checkbox" value="809985" onchange="jQuery(this).closest(\'.checkbox\').toggleClass(\'selected\')">' + 
@@ -620,10 +624,6 @@ var insertForm750592 = function() {
 '<a href="javascript:void(0)" class="checkbox" data-id="779265" onclick="var box = jQuery(this).children(\'input\'); box.prop(\'checked\', !box.prop(\'checked\'));jQuery(box).trigger(\'change\'); return false;">' + 
 '                                <input type="checkbox" value="779265" onchange="jQuery(this).closest(\'.checkbox\').toggleClass(\'selected\')">' + 
 '                                <span class="text">Expanding Philanthropic Involvement</span>' + 
-'                              </a>' + 
-'<a href="javascript:void(0)" class="checkbox" data-id="780289" onclick="var box = jQuery(this).children(\'input\'); box.prop(\'checked\', !box.prop(\'checked\'));jQuery(box).trigger(\'change\'); return false;">' + 
-'                                <input type="checkbox" value="780289" onchange="jQuery(this).closest(\'.checkbox\').toggleClass(\'selected\')">' + 
-'                                <span class="text">Invitation from a colleague</span>' + 
 '                              </a>' + 
 '<a href="javascript:void(0)" class="checkbox" data-id="781313" onclick="var box = jQuery(this).children(\'input\'); box.prop(\'checked\', !box.prop(\'checked\'));jQuery(box).trigger(\'change\'); return false;">' + 
 '                                <input type="checkbox" value="781313" onchange="jQuery(this).closest(\'.checkbox\').toggleClass(\'selected\')">' + 
