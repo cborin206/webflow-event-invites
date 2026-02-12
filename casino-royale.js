@@ -662,14 +662,12 @@ var insertForm750592 = function() {
 '<div class="field text CustomTransactionField_790529 required" >' + 
 '<label for="CustomTransactionField_790529">Do you plan to participate in the Silent and Live Auction?<span class="required-star">*</span></label>' + 
 '<select id="CustomTransactionField_790529" name="CustomTransactionField_790529" class="required" style="display:none"><option value=""></option>' + 
-'<option value="829441">Maybe</option>' + 
 '<option value="792577">No</option>' + 
 '<option value="791553">Yes</option>' + 
 '</select>' + 
 '<div class="custom-radio-group" data-target="CustomTransactionField_790529">' + 
 '<label class="custom-radio"><input type="radio" name="radio_790529" value="791553" class="required"><span>Yes</span></label>' + 
 '<label class="custom-radio"><input type="radio" name="radio_790529" value="792577" class="required"><span>No</span></label>' + 
-'<label class="custom-radio"><input type="radio" name="radio_790529" value="829441" class="required"><span>Maybe</span></label>' + 
 '</div>' + 
 '</div>' + 
 '<div class="field text CustomTransactionField_793601 required" >' + 
