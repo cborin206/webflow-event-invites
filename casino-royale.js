@@ -569,21 +569,21 @@ var insertForm750592 = function() {
 '<div class="field text CustomTransactionField_763905" >' + 
 '<label for="CustomTransactionField_763905">Number of Employees</label>' + 
 '<select id="CustomTransactionField_763905" name="CustomTransactionField_763905" style="display:none"><option value=""></option>' + 
-'<option value="835585"><100</option>' + 
-'<option value="765953">>1,000</option>' + 
-'<option value="766977">>5,000</option>' + 
-'<option value="828417">>100</option>' + 
-'<option value="836609">>250</option>' + 
-'<option value="764929">>500</option>' + 
 '<option value="768001">10,000+</option>' + 
+'<option value="765953">Greater than 1,000</option>' + 
+'<option value="766977">Greater than 5,000</option>' + 
+'<option value="828417">Greater than 100</option>' + 
+'<option value="836609">Greater than 250</option>' + 
+'<option value="764929">Greater than 500</option>' + 
+'<option value="835585">Less than 100</option>' + 
 '</select>' + 
 '<div class="custom-radio-group" data-target="CustomTransactionField_763905">' + 
-'<label class="custom-radio"><input type="radio" name="radio_763905" value="835585"><span>&lt;100</span></label>' + 
-'<label class="custom-radio"><input type="radio" name="radio_763905" value="828417"><span>&gt;100</span></label>' + 
-'<label class="custom-radio"><input type="radio" name="radio_763905" value="836609"><span>&gt;250</span></label>' + 
-'<label class="custom-radio"><input type="radio" name="radio_763905" value="764929"><span>&gt;500</span></label>' + 
-'<label class="custom-radio"><input type="radio" name="radio_763905" value="765953"><span>&gt;1,000</span></label>' + 
-'<label class="custom-radio"><input type="radio" name="radio_763905" value="766977"><span>&gt;5,000</span></label>' + 
+'<label class="custom-radio"><input type="radio" name="radio_763905" value="835585"><span>Less than 100</span></label>' + 
+'<label class="custom-radio"><input type="radio" name="radio_763905" value="828417"><span>Greater than 100</span></label>' + 
+'<label class="custom-radio"><input type="radio" name="radio_763905" value="836609"><span>Greater than 250</span></label>' + 
+'<label class="custom-radio"><input type="radio" name="radio_763905" value="764929"><span>Greater than 500</span></label>' + 
+'<label class="custom-radio"><input type="radio" name="radio_763905" value="765953"><span>Greater than 1,000</span></label>' + 
+'<label class="custom-radio"><input type="radio" name="radio_763905" value="766977"><span>Greater than 5,000</span></label>' + 
 '<label class="custom-radio"><input type="radio" name="radio_763905" value="768001"><span>10,000+</span></label>' + 
 '</div>' + 
 '</div>' + 
