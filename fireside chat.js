@@ -132,7 +132,7 @@ var insertForm815104 = function() {
 '    <div class="section registrationType">' + 
 '      <h3 style="display:none">Fireside Chat on Philanthropy with Robert F. Smith Registration</h3>' + 
 '      <div class="field radio 818176 required" >' + 
-'<label for="818176"><input id="818176" name="registration-type" class="required" type="radio" value="1000.000000" maxlength="255" data-short-name="Fireside Chat Donation" data-ticket-quantity="1" data-registration-type-value="814081" data-non-deductible-amount="0.000000"></input><span class="label">$1,000.00 - Fireside Chat Donation: Fireside Chat Donation</span></label>' + 
+'<label for="818176"><input id="818176" name="registration-type" class="required" type="radio" value="1000.000000" maxlength="255" data-short-name="Fireside Chat Donation" data-ticket-quantity="1" data-registration-type-value="814081" data-non-deductible-amount="0.000000"></input><span class="label">$1,000.00 - Fireside Chat Donation</span></label>' + 
 '</div>' + 
 '<div class="field radio cannot-attend required" >' + 
 '<label for="cannot-attend"><input id="cannot-attend" name="registration-type" class="required" type="radio" maxlength="255" data-short-name="Donation" data-registration-type-value="749571"></input><span class="label">Sorry, I can\'t attend, but I would like to show my support by making a donation</span></label>' + 
