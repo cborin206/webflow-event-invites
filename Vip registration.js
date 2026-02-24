@@ -124,14 +124,6 @@ var insertForm862208 = function() {
 '' + 
 '#spreedly-modal-overlay[style="visibility:hidden"]{display: none;}' + 
 '' + 
-'.rsvp-heading{font-size: 1.4em; font-weight: 700; margin: 20px 0 12px 0; color: inherit;}' + 
-'.rsvp-card{border: 1px solid rgba(255,255,255,0.25); border-radius: 12px; padding: 20px 24px; margin-bottom: 16px; background: rgba(255,255,255,0.08); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);}' + 
-'.rsvp-card .rsvp-title{font-size: 1.1em; font-weight: 700; margin: 0 0 6px 0; line-height: 1.3;}' + 
-'.rsvp-card .rsvp-detail{font-size: 0.9em; opacity: 0.75; margin: 2px 0; line-height: 1.4;}' + 
-'.rsvp-card .rsvp-radio-group{margin-top: 14px;}' + 
-'.rsvp-card .rsvp-radio-group label.custom-radio{display: block; margin: 8px 0; font-size: 1.05em; cursor: pointer;}' + 
-'.rsvp-card .rsvp-radio-group label.custom-radio input{margin-right: 8px; cursor: pointer;}' + 
-'' + 
 '</style>' + 
 '' + 
 '<div id="registration-form-container">' + 
@@ -1303,3 +1295,668 @@ Bloomerang.Data.PayPal.IsPayPalPaymentMethodVaultingEnabled = false;Bloomerang.D
                 };
 
                 startBloomerangLoad();
+// === VIP REGISTRATION FROSTED GLASS THEME ===
+(function() {
+  function applyTheme() {
+    // Remove any previous injection
+    var old = document.getElementById('vip-registration-theme');
+    if (old) old.remove();
+
+    var css = document.createElement('style');
+    css.id = 'vip-registration-theme';
+    css.textContent = [
+
+      // ========== TRANSPARENT BACKGROUNDS ==========
+      '#registration-form-container,',
+      '#registration-form-container *,',
+      '.registration-form,',
+      '.registration-form * {',
+      '  background-color: transparent !important;',
+      '  background-image: none !important;',
+      '  background: transparent !important;',
+      '}',
+
+      // Also nuke the Webflow wrapper backgrounds
+      '.donation-form.w-embed,',
+      '.donation-form.w-embed *,',
+      '.div-block-29,',
+      '.div-block-29 *,',
+      '.div-block-19,',
+      '.div-block-20 {',
+      '  background: transparent !important;',
+      '  background-color: transparent !important;',
+      '}',
+
+      // ========== CONTAINER ==========
+      '#registration-form-container {',
+      '  font-family: "Inter", sans-serif !important;',
+      '  max-width: 100% !important;',
+      '  padding: 10px 0 !important;',
+      '}',
+
+      // ========== SECTION HEADERS ==========
+      '.registration-form h3 {',
+      '  color: #ffffff !important;',
+      '  font-family: "Inter", sans-serif !important;',
+      '  font-size: 1.25rem !important;',
+      '  font-weight: 600 !important;',
+      '  margin-bottom: 16px !important;',
+      '}',
+
+      // ========== SECTIONS & FIELDS ==========
+      '.registration-form section,',
+      '.registration-form .section {',
+      '  padding: 8px 0 !important;',
+      '}',
+      '.registration-form .field {',
+      '  padding: 6px 0 !important;',
+      '}',
+
+      // ========== LABELS ==========
+      '.registration-form label,',
+      '.registration-form .field label {',
+      '  color: rgba(255,255,255,0.9) !important;',
+      '  font-family: "Inter", sans-serif !important;',
+      '  font-size: 0.85rem !important;',
+      '  font-weight: 400 !important;',
+      '  margin-bottom: 4px !important;',
+      '  display: block !important;',
+      '}',
+
+      '.registration-form label span,',
+      '.registration-form label .label {',
+      '  color: rgba(255,255,255,0.9) !important;',
+      '  font-family: "Inter", sans-serif !important;',
+      '  font-size: 0.85rem !important;',
+      '  font-weight: 400 !important;',
+      '  display: inline !important;',
+      '}',
+
+      '.registration-form .field .required-star {',
+      '  color: rgba(255,180,220,0.9) !important;',
+      '  display: inline-block !important;',
+      '  margin-left: 5px !important;',
+      '}',
+
+      // Error labels
+      '.registration-form label.error,',
+      '.registration-form #card-errors {',
+      '  color: #ff6b8a !important;',
+      '  font-size: 0.8rem !important;',
+      '  padding: 4px 16px !important;',
+      '}',
+
+      // ========== ALL INPUTS - FROSTED GLASS ==========
+      '.registration-form .field input[type="text"],',
+      '.registration-form .field input[type="email"],',
+      '.registration-form .field input[type="tel"],',
+      '.registration-form .field input[type="number"],',
+      '.registration-form .field input[type="date"],',
+      '.registration-form .field select,',
+      '.registration-form .field textarea,',
+      '.registration-form #card-element {',
+      '  background: rgba(255,255,255,0.12) !important;',
+      '  border: 1.5px solid rgba(255,255,255,0.3) !important;',
+      '  border-radius: 30px !important;',
+      '  color: #ffffff !important;',
+      '  font-family: "Inter", sans-serif !important;',
+      '  font-size: 0.95rem !important;',
+      '  padding: 14px 20px !important;',
+      '  max-width: 100% !important;',
+      '  width: 100% !important;',
+      '  box-sizing: border-box !important;',
+      '  outline: none !important;',
+      '  transition: all 0.3s ease !important;',
+      '  -webkit-appearance: none !important;',
+      '  appearance: none !important;',
+      '  height: auto !important;',
+      '  line-height: 1.4 !important;',
+      '}',
+
+      // Textarea
+      '.registration-form .field textarea {',
+      '  border-radius: 20px !important;',
+      '  min-height: 100px !important;',
+      '  resize: vertical !important;',
+      '}',
+
+      // Focus
+      '.registration-form .field input:focus,',
+      '.registration-form .field select:focus,',
+      '.registration-form .field textarea:focus {',
+      '  background: rgba(255,255,255,0.2) !important;',
+      '  border-color: rgba(255,255,255,0.5) !important;',
+      '  box-shadow: 0 0 20px rgba(216,82,168,0.15) !important;',
+      '}',
+
+      // Placeholder
+      '.registration-form .field input::placeholder,',
+      '.registration-form .field textarea::placeholder {',
+      '  color: rgba(255,255,255,0.5) !important;',
+      '}',
+
+      // Select dropdown
+      '.registration-form .field select {',
+      '  background: rgba(255,255,255,0.12) url("data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'16\' height=\'16\' viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'white\' stroke-width=\'2.5\' stroke-linecap=\'round\' stroke-linejoin=\'round\'%3E%3Cpolyline points=\'6 9 12 15 18 9\'%3E%3C/polyline%3E%3C/svg%3E") no-repeat right 16px center / 16px 16px !important;',
+      '  padding-right: 44px !important;',
+      '  cursor: pointer !important;',
+      '}',
+
+      '.registration-form .field select option {',
+      '  background: #3a2060 !important;',
+      '  color: #ffffff !important;',
+      '}',
+
+      // ========== RADIO BUTTONS (TICKET TYPES) ==========
+      '.registration-form .field.radio label {',
+      '  display: flex !important;',
+      '  align-items: center !important;',
+      '  background: rgba(255,255,255,0.1) !important;',
+      '  border: 1.5px solid rgba(255,255,255,0.25) !important;',
+      '  border-radius: 30px !important;',
+      '  padding: 14px 20px !important;',
+      '  margin-bottom: 8px !important;',
+      '  cursor: pointer !important;',
+      '  transition: all 0.3s ease !important;',
+      '  color: rgba(255,255,255,0.9) !important;',
+      '}',
+
+      '.registration-form .field.radio label:hover {',
+      '  background: rgba(255,255,255,0.18) !important;',
+      '  border-color: rgba(255,255,255,0.4) !important;',
+      '}',
+
+      '.registration-form .field.radio input {',
+      '  width: auto !important;',
+      '  margin-right: 12px !important;',
+      '  margin-left: 0 !important;',
+      '  accent-color: #d852a8 !important;',
+      '  padding: 0 !important;',
+      '  border-radius: 50% !important;',
+      '}',
+
+      '.registration-form .field.radio label .label,',
+      '.registration-form .field.radio label span.label {',
+      '  color: rgba(255,255,255,0.95) !important;',
+      '  font-size: 0.95rem !important;',
+      '  display: inline !important;',
+      '}',
+
+      // ========== CUSTOM RADIO GROUPS (converted dropdowns) ==========
+      '.registration-form .custom-radio-group {',
+      '  display: flex !important;',
+      '  flex-wrap: wrap !important;',
+      '  gap: 8px !important;',
+      '  margin-top: 6px !important;',
+      '}',
+
+      '.registration-form .custom-radio-group .custom-radio {',
+      '  display: inline-flex !important;',
+      '  align-items: center !important;',
+      '  background: rgba(255,255,255,0.08) !important;',
+      '  border: 1.5px solid rgba(255,255,255,0.25) !important;',
+      '  border-radius: 30px !important;',
+      '  padding: 8px 18px !important;',
+      '  cursor: pointer !important;',
+      '  transition: all 0.25s ease !important;',
+      '  backdrop-filter: blur(6px) !important;',
+      '  -webkit-backdrop-filter: blur(6px) !important;',
+      '}',
+
+      '.registration-form .custom-radio-group .custom-radio:hover {',
+      '  background: rgba(255,255,255,0.15) !important;',
+      '  border-color: rgba(255,255,255,0.4) !important;',
+      '}',
+
+      '.registration-form .custom-radio-group .custom-radio input[type="radio"] {',
+      '  accent-color: #d852a8 !important;',
+      '  margin-right: 8px !important;',
+      '  width: auto !important;',
+      '  cursor: pointer !important;',
+      '}',
+
+      '.registration-form .custom-radio-group .custom-radio span {',
+      '  color: rgba(255,255,255,0.95) !important;',
+      '  font-size: 0.9rem !important;',
+      '  font-family: "Inter", sans-serif !important;',
+      '  display: inline !important;',
+      '}',
+
+      '.registration-form .custom-radio-group .custom-radio:has(input:checked) {',
+      '  background: rgba(255,255,255,0.18) !important;',
+      '  border-color: rgba(216,82,168,0.6) !important;',
+      '}',
+
+      // ========== CHECKBOXES (MULTI-SELECT) ==========
+      '.registration-form .field .checkboxes {',
+      '  max-width: 100% !important;',
+      '  border: 1.5px solid rgba(255,255,255,0.25) !important;',
+      '  border-radius: 16px !important;',
+      '  overflow: hidden !important;',
+      '}',
+
+      '.registration-form .field .checkbox {',
+      '  display: flex !important;',
+      '  align-items: center !important;',
+      '  position: relative !important;',
+      '  box-sizing: border-box !important;',
+      '  height: auto !important;',
+      '  line-height: 1.4 !important;',
+      '  padding: 12px 16px 12px 44px !important;',
+      '  border-bottom: 1px solid rgba(255,255,255,0.1) !important;',
+      '  color: rgba(255,255,255,0.9) !important;',
+      '  overflow: visible !important;',
+      '  text-decoration: none !important;',
+      '  cursor: pointer !important;',
+      '  transition: background 0.2s ease !important;',
+      '}',
+
+      '.registration-form .field .checkbox:last-child {',
+      '  border-bottom: none !important;',
+      '}',
+
+
+
+      '.registration-form .field .checkbox:hover {',
+      '  background: rgba(255,255,255,0.06) !important;',
+      '}',
+
+      // Custom checkbox indicator via ::before
+      '.registration-form .field .checkbox::before {',
+      '  content: "" !important;',
+      '  position: absolute !important;',
+      '  left: 14px !important;',
+      '  top: 50% !important;',
+      '  transform: translateY(-50%) !important;',
+      '  width: 18px !important;',
+      '  height: 18px !important;',
+      '  border: 2px solid rgba(255,255,255,0.4) !important;',
+      '  border-radius: 4px !important;',
+      '  background: rgba(255,255,255,0.08) !important;',
+      '  transition: all 0.2s ease !important;',
+      '  flex-shrink: 0 !important;',
+      '}',
+
+      // Selected state
+      '.registration-form .field .checkbox.selected {',
+      '  background: linear-gradient(135deg, rgba(216,82,168,0.3), rgba(6,59,167,0.3)) !important;',
+      '  color: #fff !important;',
+      '}',
+
+      '.registration-form .field .checkbox.selected::before {',
+      '  content: "\\2713" !important;',
+      '  background: linear-gradient(135deg, #d852a8, #063ba7) !important;',
+      '  border: none !important;',
+      '  color: #ffffff !important;',
+      '  font-size: 12px !important;',
+      '  display: flex !important;',
+      '  align-items: center !important;',
+      '  justify-content: center !important;',
+      '  line-height: 1 !important;',
+      '}',
+
+      // Keep the real checkbox hidden
+      '.registration-form .field .checkbox input {',
+      '  opacity: 0.01 !important;',
+      '  position: absolute !important;',
+      '  left: -50px !important;',
+      '  z-index: -5 !important;',
+      '}',
+
+      '.registration-form .field .checkbox span.text {',
+      '  color: rgba(255,255,255,0.9) !important;',
+      '}',
+      '.registration-form .field .checkbox.selected span.text {',
+      '  color: #ffffff !important;',
+      '}',
+
+      // ========== CONSENT CHECKBOXES ==========
+      '.registration-form .field.checkbox label {',
+      '  color: rgba(255,255,255,0.9) !important;',
+      '  display: inline-block !important;',
+      '}',
+      '.registration-form .field.checkbox input {',
+      '  width: auto !important;',
+      '  margin-left: 0 !important;',
+      '}',
+      '.registration-form .section.consent .field.checkbox:not(.consent-all) {',
+      '  margin-left: 20px !important;',
+      '}',
+
+      // ========== STRIPE ==========
+      '.registration-form .field .StripeElement {',
+      '  background: rgba(255,255,255,0.12) !important;',
+      '  border: 1.5px solid rgba(255,255,255,0.3) !important;',
+      '  border-radius: 30px !important;',
+      '  padding: 14px 20px !important;',
+      '  max-width: 100% !important;',
+      '  width: 100% !important;',
+      '  box-sizing: border-box !important;',
+      '  display: block !important;',
+      '}',
+
+      // ========== SUMMARY TABLE ==========
+      '.registration-form .registration-summary {',
+      '  border-collapse: separate !important;',
+      '  border-spacing: 0 !important;',
+      '  text-align: left !important;',
+      '  width: 100% !important;',
+      '  border-radius: 16px !important;',
+      '  overflow: hidden !important;',
+      '}',
+
+      '.registration-form .registration-summary td,',
+      '.registration-form .registration-summary th {',
+      '  padding: 12px !important;',
+      '  color: #ffffff !important;',
+      '}',
+
+      '.registration-form .registration-summary th {',
+      '  color: rgba(255,255,255,0.7) !important;',
+      '  font-weight: 500 !important;',
+      '  font-size: 0.8rem !important;',
+      '  text-transform: uppercase !important;',
+      '  letter-spacing: 0.05em !important;',
+      '  border-bottom: 1px solid rgba(255,255,255,0.15) !important;',
+      '}',
+
+      '.registration-form .registration-summary .summary-total {',
+      '  font-weight: bold !important;',
+      '  border-top: 1.5px solid rgba(255,255,255,0.3) !important;',
+      '}',
+
+      '.registration-form .registration-summary span {',
+      '  color: #ffffff !important;',
+      '}',
+
+      '.registration-form .registration-summary #numberOfRegistrations {',
+      '  background: rgba(255,255,255,0.12) !important;',
+      '  border: 1px solid rgba(255,255,255,0.3) !important;',
+      '  border-radius: 10px !important;',
+      '  color: #ffffff !important;',
+      '  padding: 6px 8px !important;',
+      '  width: 50px !important;',
+      '  text-align: center !important;',
+      '}',
+
+      '.registration-form .registration-summary input.amount-field {',
+      '  background: rgba(255,255,255,0.12) !important;',
+      '  border: 1px solid rgba(255,255,255,0.3) !important;',
+      '  border-radius: 10px !important;',
+      '  color: #ffffff !important;',
+      '  padding: 6px 8px !important;',
+      '  width: 80px !important;',
+      '}',
+
+      // ========== SUBMIT BUTTON ==========
+      '.btn-group {',
+      '  margin-top: 20px !important;',
+      '  text-align: center !important;',
+      '}',
+
+      '#registration-form-container .btn-group .btn-submit-registration,',
+      '#registration-form-container .btn-group input.btn-submit-registration,',
+      '#registration-form-container input[type="submit"].btn-submit-registration,',
+      '.registration-form .btn-submit-registration,',
+      'input.btn.btn-submit.btn-submit-registration,',
+      'input#express-submit {',
+      '  background: #063ba7 !important;',
+      '  background-image: none !important;',
+      '  background-color: #063ba7 !important;',
+      '  color: #ffffff !important;',
+      '  font-family: "Inter", sans-serif !important;',
+      '  font-size: 1.05rem !important;',
+      '  font-weight: 700 !important;',
+      '  letter-spacing: 0.04em !important;',
+      '  border: none !important;',
+      '  border-radius: 30px !important;',
+      '  padding: 18px 40px !important;',
+      '  width: 100% !important;',
+      '  max-width: 100% !important;',
+      '  cursor: pointer !important;',
+      '  transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1) !important;',
+      '  box-shadow: 0 5px 15px rgba(0,0,0,0.2) !important;',
+      '  height: auto !important;',
+      '  line-height: 1.4 !important;',
+      '  position: relative !important;',
+      '  overflow: hidden !important;',
+      '  -webkit-appearance: none !important;',
+      '}',
+
+      '#registration-form-container .btn-submit-registration:hover,',
+      'input#express-submit:hover {',
+      '  background: #0747c4 !important;',
+      '  background-image: none !important;',
+      '  background-color: #0747c4 !important;',
+      '  box-shadow: 0 15px 30px rgba(6,59,167,0.4) !important;',
+      '}',
+
+      '#registration-form-container .btn-submit-registration.disabled,',
+      '#registration-form-container .btn-submit-registration:disabled,',
+      'input#express-submit:disabled {',
+      '  opacity: 0.6 !important;',
+      '  cursor: not-allowed !important;',
+      '  background: #063ba7 !important;',
+      '  background-image: none !important;',
+      '}',
+
+      // ========== ERRORS ==========
+      '.registration-form .errors {',
+      '  border: 1.5px solid rgba(255,100,130,0.5) !important;',
+      '  color: #ff6b8a !important;',
+      '  padding: 14px 20px !important;',
+      '  border-radius: 16px !important;',
+      '}',
+
+      '.registration-form .hidden { display: none !important; }',
+
+      // ========== SIDENOTES ==========
+      '.registration-form .field .sidenote {',
+      '  color: rgba(255,255,255,0.5) !important;',
+      '  font-size: 0.75rem !important;',
+      '}',
+
+      // ========== PROCESSING & SUCCESS ==========
+      '#registration-processing-container,',
+      '#registration-processing-container * {',
+      '  color: #ffffff !important;',
+      '}',
+      '.donation-success,',
+      '.donation-success * {',
+      '  color: #ffffff !important;',
+      '}',
+
+      // ========== CAPTCHA ==========
+      '.registration-form .section.captcha {',
+      '  display: flex !important;',
+      '  justify-content: center !important;',
+      '  padding: 12px 0 !important;',
+      '}',
+
+      // ========== CATCH-ALL TEXT WHITE ==========
+      '#registration-form-container span,',
+      '#registration-form-container p,',
+      '#registration-form-container div,',
+      '#registration-form-container td,',
+      '#registration-form-container th,',
+      '#registration-form-container h3,',
+      '#registration-form-container h4 {',
+      '  color: #ffffff !important;',
+      '}',
+
+      // ========== SELECT CHEVRON RE-APPLY (after transparent nuke) ==========
+      'form.registration-form .field select,',
+      '#registration-form .field select,',
+      'form#registration-form .field select {',
+      '  background: rgba(255,255,255,0.12) url("data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'24\' height=\'24\' viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'white\' stroke-width=\'2.5\' stroke-linecap=\'round\' stroke-linejoin=\'round\'%3E%3Cpolyline points=\'6 9 12 15 18 9\'%3E%3C/polyline%3E%3C/svg%3E") no-repeat right 16px center / 16px 16px !important;',
+      '  -webkit-appearance: none !important;',
+      '  -moz-appearance: none !important;',
+      '  appearance: none !important;',
+      '  padding-right: 44px !important;',
+      '}',
+
+
+      // ========== RSVP CARDS ==========
+      '.rsvp-heading {',
+      '  font-size: 1.4em !important;',
+      '  font-weight: 700 !important;',
+      '  margin: 24px 0 14px 0 !important;',
+      '  color: #ffffff !important;',
+      '  font-family: "Inter", sans-serif !important;',
+      '}',
+
+      '.rsvp-card {',
+      '  border: 1.5px solid rgba(255,255,255,0.25) !important;',
+      '  border-radius: 16px !important;',
+      '  padding: 20px 24px !important;',
+      '  margin-bottom: 16px !important;',
+      '  background: rgba(255,255,255,0.08) !important;',
+      '  backdrop-filter: blur(8px) !important;',
+      '  -webkit-backdrop-filter: blur(8px) !important;',
+      '}',
+
+      '.rsvp-card .rsvp-title {',
+      '  font-size: 1.1em !important;',
+      '  font-weight: 700 !important;',
+      '  margin: 0 0 8px 0 !important;',
+      '  line-height: 1.3 !important;',
+      '  color: #ffffff !important;',
+      '  font-family: "Inter", sans-serif !important;',
+      '}',
+
+      '.rsvp-card .rsvp-detail {',
+      '  font-size: 0.9em !important;',
+      '  opacity: 0.75 !important;',
+      '  margin: 2px 0 !important;',
+      '  line-height: 1.4 !important;',
+      '  color: #ffffff !important;',
+      '  font-family: "Inter", sans-serif !important;',
+      '}',
+
+      '.rsvp-card .rsvp-radio-group {',
+      '  margin-top: 14px !important;',
+      '}',
+
+      '.rsvp-card .rsvp-radio-group label.custom-radio {',
+      '  display: inline-flex !important;',
+      '  align-items: center !important;',
+      '  background: rgba(255,255,255,0.08) !important;',
+      '  border: 1.5px solid rgba(255,255,255,0.25) !important;',
+      '  border-radius: 30px !important;',
+      '  padding: 8px 18px !important;',
+      '  margin-right: 8px !important;',
+      '  margin-bottom: 4px !important;',
+      '  cursor: pointer !important;',
+      '  transition: all 0.25s ease !important;',
+      '  backdrop-filter: blur(6px) !important;',
+      '  -webkit-backdrop-filter: blur(6px) !important;',
+      '}',
+
+      '.rsvp-card .rsvp-radio-group label.custom-radio:hover {',
+      '  background: rgba(255,255,255,0.15) !important;',
+      '  border-color: rgba(255,255,255,0.4) !important;',
+      '}',
+
+      '.rsvp-card .rsvp-radio-group label.custom-radio input[type="radio"] {',
+      '  accent-color: #d852a8 !important;',
+      '  margin-right: 8px !important;',
+      '  width: auto !important;',
+      '  cursor: pointer !important;',
+      '}',
+
+      '.rsvp-card .rsvp-radio-group label.custom-radio span {',
+      '  color: rgba(255,255,255,0.95) !important;',
+      '  font-size: 0.9rem !important;',
+      '  font-family: "Inter", sans-serif !important;',
+      '  display: inline !important;',
+      '}',
+
+      '.rsvp-card .rsvp-radio-group label.custom-radio:has(input:checked) {',
+      '  background: rgba(255,255,255,0.18) !important;',
+      '  border-color: rgba(216,82,168,0.6) !important;',
+      '}',
+
+      // ========== MOBILE ==========
+      '@media (max-width: 768px) {',
+      '  .registration-form .field input,',
+      '  .registration-form .field select,',
+      '  .registration-form .field textarea {',
+      '    padding: 12px 16px !important;',
+      '    font-size: 16px !important;',
+      '  }',
+      '  .registration-form .field.radio label {',
+      '    padding: 12px 16px !important;',
+      '  }',
+      '  .btn-submit-registration {',
+      '    padding: 14px 30px !important;',
+      '  }',
+      '}',
+
+    ].join('\n');
+
+    document.head.appendChild(css);
+
+    // Direct inline style override for submit button (nuclear option against Webflow styles)
+    var submitBtn = document.getElementById('express-submit');
+    if (submitBtn) {
+      submitBtn.style.setProperty('background', '#063ba7', 'important');
+      submitBtn.style.setProperty('background-image', 'none', 'important');
+      submitBtn.style.setProperty('background-color', '#063ba7', 'important');
+    }
+  }
+
+  // Apply immediately when form container appears
+  var observer = new MutationObserver(function(mutations) {
+    if (document.getElementById('registration-form-container')) {
+      applyTheme();
+      observer.disconnect();
+    }
+  });
+  observer.observe(document.body || document.documentElement, { childList: true, subtree: true });
+
+  // Also apply on intervals to catch late-loading elements
+  setTimeout(applyTheme, 1000);
+  setTimeout(applyTheme, 2000);
+  setTimeout(applyTheme, 3500);
+  setTimeout(applyTheme, 5000);
+
+  // Apply immediately if form already exists
+  if (document.getElementById('registration-form-container')) {
+    applyTheme();
+  }
+
+  // === RADIO SYNC: sync custom radio buttons to hidden selects ===
+  function initRadioSync() {
+    // Handle .custom-radio-group (converted dropdowns)
+    var groups = document.querySelectorAll('.custom-radio-group');
+    groups.forEach(function(group) {
+      var radios = group.querySelectorAll('input[type="radio"]');
+      var targetId = group.getAttribute('data-target');
+      var targetSelect = document.getElementById(targetId);
+      radios.forEach(function(radio) {
+        radio.addEventListener('change', function() {
+          if (targetSelect) {
+            targetSelect.value = this.value;
+            jQuery('#' + targetId).trigger('change');
+          }
+        });
+      });
+    });
+    // Handle RSVP card radios
+    var rsvpRadios = document.querySelectorAll('.rsvp-card input[type="radio"]');
+    rsvpRadios.forEach(function(radio) {
+      radio.addEventListener('change', function() {
+        var radioName = this.getAttribute('name');
+        var targetId = radioName.replace('radio_', 'CustomTransactionField_');
+        var targetSelect = document.getElementById(targetId);
+        if (targetSelect) {
+          targetSelect.value = this.value;
+          jQuery('#' + targetId).trigger('change');
+        }
+      });
+    });
+  }
+  setTimeout(initRadioSync, 1500);
+  setTimeout(initRadioSync, 3000);
+  setTimeout(initRadioSync, 5500);
+})();
