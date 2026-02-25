@@ -129,57 +129,14 @@ var insertForm862208 = function() {
 '<div id="registration-form-container">' + 
 '  <form id="registration-form" class="registration-form" method="post" onsubmit="event.preventDefault(); collectPayment();">' + 
 '    <div class="errors hidden"></div>' + 
-'    <div class="section registrationType">' + 
-'      <h3 style="display:none">VIP Registration Registration</h3>' + 
-'      <div class="field radio 865280 required" >' + 
-'<label for="865280"><input id="865280" name="registration-type" class="required" type="radio" value="25000.000000" maxlength="255" data-short-name="Ticket" data-ticket-quantity="1" data-registration-type-value="861185" data-non-deductible-amount="0.000000"></input><span class="label">$25,000.00 - Ticket</span></label>' + 
-'</div>' + 
-'<div class="field radio cannot-attend required" >' + 
-'<label for="cannot-attend"><input id="cannot-attend" name="registration-type" class="required" type="radio" maxlength="255" data-short-name="Donation" data-registration-type-value="749571"></input><span class="label">Sorry, I can\'t attend, but I would like to show my support by making a donation</span></label>' + 
+'    <div class="section custom-fields">' + 
+'      <h3>Additional Information</h3>' + 
+'      <div class="field text CustomTransactionField_850945 required" >' + 
+'<label for="CustomTransactionField_850945"><span class="label">Attendee Name(s)</span><span class="required-star">*</span></label>' + 
+'<input id="CustomTransactionField_850945" name="CustomTransactionField_850945" class="required" type="text" maxlength="255"></input>' + 
 '</div>' + 
 '' + 
 '</div>' + 
-'    <div class="section registrationSummary">' + 
-'      <table class="registration-summary" style="display: none" data-registration-type-field-id="688130" data-ticket-quantity-field-id="688131">' + 
-'                        <tr>' + 
-'                            <th class="quantity-column">Quantity</th>' + 
-'                            <th class="description-column">Type</th>' + 
-'                            <th class="tickets-column">Tickets</th>' + 
-'                            <th class="price-column">Price</th>' + 
-'                        </tr>' + 
-'                        <tr class="summary-row">' + 
-'                            <td><input id="numberOfRegistrations" type="number" class="required integer minimum1" value="1"></input> &times;' + 
-'                                <label for="numberOfRegistrations" class="error" style="display: none" generated="true"></label></td>' + 
-'                            <td><span id="shortDescription"></span></td>' + 
-'                            <td><span id="ticketQty"></span></td>' + 
-'                            <td><span id="unitPrice"></span></td>' + 
-'                        </tr>' + 
-'                        ' + 
-'                        <tr class="additional-donation">' + 
-'                            <td></td>' + 
-'                            <td>Additional Donation</td>' + 
-'                            <td></td>' + 
-'                            <td><input id="additional-donation-amount" name="additionalDonationAmount" type="text" class="currency amount-field minimum1" placeholder="$0.00">' + 
-'                                <label for="additional-donation-amount" class="error" style="display: none" generated="true"></label></input></td>' + 
-'                        </tr>' + 
-'                        <tr class="cannot-attend-donation" style="display: none">      ' + 
-'                            <td></td>' + 
-'                            <td>Donation</td>' + 
-'                            <td></td>' + 
-'                            <td><input id="cannot-attend-amount" name="cannotAttendAmount" type="text" class="currency amount-field required minimum1" placeholder="$0.00"></input>' + 
-'                                <label for="cannot-attend-amount" class="error" style="display: none" generated="true"></label></td>' + 
-'                        </tr>' + 
-'                        <tr class="summary-total">' + 
-'                            <td>Total:</td>' + 
-'                            <td></td>' + 
-'                            <td><span id="totalTicketQty">0</span></td>' + 
-'                            <td><span id="totalPrice">$0.00</span></td>' + 
-'                        </tr>' + 
-'                    </table>' + 
-'' + 
-'</div>' + 
-'    ' + 
-'    ' + 
 '    <div class="section contact">' + 
 '      <h3>Contact Information</h3>' + 
 '      <div class="field text first-name required" >' + 
@@ -199,7 +156,8 @@ var insertForm862208 = function() {
 '<input id="phone-number" name="phone-number" class="phoneUS" type="tel"></input>' + 
 '</div>' + 
 '' + 
-'</div>' + '    <div class="section billing-address">' + 
+'</div>' + 
+'    <div class="section billing-address">' + 
 '      <div class="field  country required" >' + 
 '<label for="country">Country<span class="required-star">*</span></label>' + 
 '<select id="country" name="country" class="required"><option value=""></option>' + 
@@ -553,14 +511,57 @@ var insertForm862208 = function() {
 '' + 
 '</div>' + 
 
-'    <div class="section custom-fields">' + 
-'      <h3>Additional Information</h3>' + 
-'      <div class="field text CustomTransactionField_850945 required" >' + 
-'<label for="CustomTransactionField_850945"><span class="label">Attendee Name(s)</span><span class="required-star">*</span></label>' + 
-'<input id="CustomTransactionField_850945" name="CustomTransactionField_850945" class="required" type="text" maxlength="255"></input>' + 
+'    <div class="section registrationType">' + 
+'      <h3 style="display:none">VIP Registration Registration</h3>' + 
+'      <div class="field radio 865280 required" >' + 
+'<label for="865280"><input id="865280" name="registration-type" class="required" type="radio" value="25000.000000" maxlength="255" data-short-name="Minimum Donation" data-ticket-quantity="1" data-registration-type-value="861185" data-non-deductible-amount="0.000000"></input><span class="label">$25,000.00 - Minimum Donation</span></label>' + 
+'</div>' + 
+'<div class="field radio cannot-attend required" >' + 
+'<label for="cannot-attend"><input id="cannot-attend" name="registration-type" class="required" type="radio" maxlength="255" data-short-name="Donation" data-registration-type-value="749571"></input><span class="label">Sorry, I can\'t attend, but I would like to show my support by making a donation</span></label>' + 
 '</div>' + 
 '' + 
 '</div>' + 
+'    <div class="section registrationSummary">' + 
+'      <table class="registration-summary" style="display: none" data-registration-type-field-id="688130" data-ticket-quantity-field-id="688131">' + 
+'                        <tr>' + 
+'                            <th class="quantity-column">Quantity</th>' + 
+'                            <th class="description-column">Type</th>' + 
+'                            <th class="tickets-column">Minimum Donation</th>' + 
+'                            <th class="price-column">Price</th>' + 
+'                        </tr>' + 
+'                        <tr class="summary-row">' + 
+'                            <td><input id="numberOfRegistrations" type="number" class="required integer minimum1" value="1"></input> &times;' + 
+'                                <label for="numberOfRegistrations" class="error" style="display: none" generated="true"></label></td>' + 
+'                            <td><span id="shortDescription"></span></td>' + 
+'                            <td><span id="ticketQty"></span></td>' + 
+'                            <td><span id="unitPrice"></span></td>' + 
+'                        </tr>' + 
+'                        ' + 
+'                        <tr class="additional-donation">' + 
+'                            <td></td>' + 
+'                            <td>Additional Donation</td>' + 
+'                            <td></td>' + 
+'                            <td><input id="additional-donation-amount" name="additionalDonationAmount" type="text" class="currency amount-field minimum1" placeholder="$0.00">' + 
+'                                <label for="additional-donation-amount" class="error" style="display: none" generated="true"></label></input></td>' + 
+'                        </tr>' + 
+'                        <tr class="cannot-attend-donation" style="display: none">      ' + 
+'                            <td></td>' + 
+'                            <td>Donation</td>' + 
+'                            <td></td>' + 
+'                            <td><input id="cannot-attend-amount" name="cannotAttendAmount" type="text" class="currency amount-field required minimum1" placeholder="$0.00"></input>' + 
+'                                <label for="cannot-attend-amount" class="error" style="display: none" generated="true"></label></td>' + 
+'                        </tr>' + 
+'                        <tr class="summary-total">' + 
+'                            <td>Total:</td>' + 
+'                            <td></td>' + 
+'                            <td><span id="totalTicketQty">0</span></td>' + 
+'                            <td><span id="totalPrice">$0.00</span></td>' + 
+'                        </tr>' + 
+'                    </table>' + 
+'' + 
+'</div>' + 
+'    ' + 
+'    ' + 
 '    <div class="section comment" style="display:none">' + 
 '      <div class="field text comment" >' + 
 '<label for="comment"><span class="label">Comments</span></label>' + 
