@@ -130,32 +130,34 @@ var insertForm862208 = function() {
 '  <form id="registration-form" class="registration-form" method="post" onsubmit="event.preventDefault(); collectPayment();">' + 
 '    <div class="errors hidden"></div>' + 
 '    <div class="section contact">' + 
-'      <h3>Billing and Contact Information</h3>' + 
+'      <h3>Contact Information</h3>' + 
 '    <div class="section custom-fields" style="padding:0">' + 
 '      <div class="field text CustomTransactionField_850945 required" >' + 
 '<label for="CustomTransactionField_850945"><span class="label">Attendee Name(s)</span><span class="required-star">*</span></label>' + 
 '<input id="CustomTransactionField_850945" name="CustomTransactionField_850945" class="required" type="text" maxlength="255"></input>' + 
 '</div>' + 
 '</div>' + 
+'      <h3 style="margin-top:20px">Contact Details</h3>' + 
 '      <div class="field text first-name required" >' + 
-'<label for="first-name"><span class="label">First Name</span><span class="required-star">*</span></label>' + 
+'<label for="first-name"><span class="label">Contact First Name</span><span class="required-star">*</span></label>' + 
 '<input id="first-name" name="first-name" class="required" type="text"></input>' + 
 '</div>' + 
 '<div class="field text last-name required" >' + 
-'<label for="last-name"><span class="label">Last Name</span><span class="required-star">*</span></label>' + 
+'<label for="last-name"><span class="label">Contact Last Name</span><span class="required-star">*</span></label>' + 
 '<input id="last-name" name="last-name" class="required" type="text"></input>' + 
 '</div>' + 
 '<div class="field email email-address required" >' + 
-'<label for="email-address"><span class="label">Email</span><span class="required-star">*</span></label>' + 
+'<label for="email-address"><span class="label">Contact Email</span><span class="required-star">*</span></label>' + 
 '<input id="email-address" name="email-address" class="email required" type="email" placeholder="someone@website.com"></input>' + 
 '</div>' + 
 '<div class="field tel phone-number" >' + 
-'<label for="phone-number"><span class="label">Phone</span></label>' + 
+'<label for="phone-number"><span class="label">Contact Phone</span></label>' + 
 '<input id="phone-number" name="phone-number" class="phoneUS" type="tel"></input>' + 
 '</div>' + 
 '' + 
 '</div>' + 
 '    <div class="section billing-address">' + 
+'      <h3>Billing</h3>' + 
 '      <div class="field  country required" >' + 
 '<label for="country">Country<span class="required-star">*</span></label>' + 
 '<select id="country" name="country" class="required"><option value=""></option>' + 
