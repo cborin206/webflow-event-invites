@@ -559,56 +559,6 @@ var insertForm862208 = function() {
 '<label for="CustomTransactionField_850945"><span class="label">Attendee Name(s)</span><span class="required-star">*</span></label>' + 
 '<input id="CustomTransactionField_850945" name="CustomTransactionField_850945" class="required" type="text" maxlength="255"></input>' + 
 '</div>' + 
-'<div class="rsvp-heading">RSVP</div>' + 
-'<div class="field text CustomTransactionField_851969 required" style="padding:0">' + 
-'<select id="CustomTransactionField_851969" name="CustomTransactionField_851969" class="required" style="display:none"><option value=""></option>' + 
-'<option value="854017">No</option>' + 
-'<option value="852993">Yes</option>' + 
-'</select>' + 
-'<div class="rsvp-card">' + 
-'<div class="rsvp-title">All In for HBCUs: A Casino Royale Fundraiser presented by AwareFest</div>' + 
-'<div class="rsvp-detail">Hosted by Anthony Anderson and Rosci Diaz</div>' + 
-'<div class="rsvp-detail">Live Auction hosted by Magic Johnson</div>' + 
-'<div class="rsvp-detail">Special Performance by Wyclef Jean</div>' + 
-'<div class="rsvp-detail">Wednesday, March 25 \u2022 6 PM \u2013 10:00 PM \u2022 Hotel Phoenix</div>' + 
-'<div class="rsvp-radio-group">' + 
-'<label class="custom-radio"><input type="radio" name="radio_851969" value="852993" class="required"><span>Yes</span></label>' + 
-'<label class="custom-radio"><input type="radio" name="radio_851969" value="854017"><span>No</span></label>' + 
-'</div>' + 
-'</div>' + 
-'</div>' + 
-'<div class="field text CustomTransactionField_855041 required" style="padding:0">' + 
-'<select id="CustomTransactionField_855041" name="CustomTransactionField_855041" class="required" style="display:none"><option value=""></option>' + 
-'<option value="857089">No</option>' + 
-'<option value="856065">Yes</option>' + 
-'</select>' + 
-'<div class="rsvp-card">' + 
-'<div class="rsvp-title">Fireside Chat on Philanthropy with Robert F. Smith presented by AwareFest</div>' + 
-'<div class="rsvp-detail">Moderated by CNBC Reporter, Frank Holland</div>' + 
-'<div class="rsvp-detail">Thursday, March 26 \u2022 3 PM \u2013 5:45 PM</div>' + 
-'<div class="rsvp-detail">State Farm Arena, Suite Level Banquet Room</div>' + 
-'<div class="rsvp-radio-group">' + 
-'<label class="custom-radio"><input type="radio" name="radio_855041" value="856065" class="required"><span>Yes</span></label>' + 
-'<label class="custom-radio"><input type="radio" name="radio_855041" value="857089"><span>No</span></label>' + 
-'</div>' + 
-'</div>' + 
-'</div>' + 
-'<div class="field text CustomTransactionField_858113 required" style="padding:0">' + 
-'<select id="CustomTransactionField_858113" name="CustomTransactionField_858113" class="required" style="display:none"><option value=""></option>' + 
-'<option value="860161">No</option>' + 
-'<option value="859137">Yes</option>' + 
-'</select>' + 
-'<div class="rsvp-card">' + 
-'<div class="rsvp-title">V-VIP Suite Experience with Robert F. Smith presented by AwareFest</div>' + 
-'<div class="rsvp-detail">Thursday, March 26 \u2022 6 PM \u2013 10 PM</div>' + 
-'<div class="rsvp-detail">Robert F. Smith Private Viewing Suite</div>' + 
-'<div class="rsvp-detail">State Farm Arena</div>' + 
-'<div class="rsvp-radio-group">' + 
-'<label class="custom-radio"><input type="radio" name="radio_858113" value="859137" class="required"><span>Yes</span></label>' + 
-'<label class="custom-radio"><input type="radio" name="radio_858113" value="860161"><span>No</span></label>' + 
-'</div>' + 
-'</div>' + 
-'</div>' + 
 '' + 
 '</div>' + 
 '    <div class="section comment" style="display:none">' + 
@@ -1253,13 +1203,6 @@ Bloomerang.Data.PayPal.IsPayPalPaymentMethodVaultingEnabled = false;Bloomerang.D
           jQuery(".registration-form .field.consent-all").siblings().each(function(i, e) { 
               jQuery(e).toggle();
           });
-        });
-
-        // RSVP radio sync - sync custom radio buttons to hidden selects
-        jQuery('.rsvp-card input[type="radio"]').on('change', function() {
-          var radioName = jQuery(this).attr('name');
-          var targetId = radioName.replace('radio_', 'CustomTransactionField_');
-          jQuery('#' + targetId).val(jQuery(this).val());
         });
       
 })(jQuery);
