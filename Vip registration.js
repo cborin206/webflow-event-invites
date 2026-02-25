@@ -129,16 +129,14 @@ var insertForm862208 = function() {
 '<div id="registration-form-container">' + 
 '  <form id="registration-form" class="registration-form" method="post" onsubmit="event.preventDefault(); collectPayment();">' + 
 '    <div class="errors hidden"></div>' + 
-'    <div class="section custom-fields">' + 
-'      <h3>Additional Information</h3>' + 
+'    <div class="section contact">' + 
+'      <h3>Billing and Contact Information</h3>' + 
+'    <div class="section custom-fields" style="padding:0">' + 
 '      <div class="field text CustomTransactionField_850945 required" >' + 
 '<label for="CustomTransactionField_850945"><span class="label">Attendee Name(s)</span><span class="required-star">*</span></label>' + 
 '<input id="CustomTransactionField_850945" name="CustomTransactionField_850945" class="required" type="text" maxlength="255"></input>' + 
 '</div>' + 
-'' + 
 '</div>' + 
-'    <div class="section contact">' + 
-'      <h3>Contact Information</h3>' + 
 '      <div class="field text first-name required" >' + 
 '<label for="first-name"><span class="label">First Name</span><span class="required-star">*</span></label>' + 
 '<input id="first-name" name="first-name" class="required" type="text"></input>' + 
