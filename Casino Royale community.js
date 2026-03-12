@@ -618,9 +618,9 @@ var insertForm977920 = function() {
 '                              </a>' + 
 '</div>' + 
 '</div>' + 
-'<div class="field text CustomTransactionField_988161" >' + 
-'<label for="CustomTransactionField_988161">Please select your age range:</label>' + 
-'<select id="CustomTransactionField_988161" name="CustomTransactionField_988161"><option value=""></option>' + 
+'<div class="field text CustomTransactionField_988161 required" >' + 
+'<label for="CustomTransactionField_988161">Please select your age range:<span class="required-star">*</span></label>' + 
+'<select id="CustomTransactionField_988161" name="CustomTransactionField_988161" class="required"><option value=""></option>' + 
 '<option value="989185">18 to 24</option>' + 
 '<option value="990209">25 to 29</option>' + 
 '<option value="991233">30 to 35</option>' + 
@@ -668,6 +668,10 @@ var insertForm977920 = function() {
 '<div class="field text CustomTransactionField_985089" >' + 
 '<label for="CustomTransactionField_985089"><span class="label">Additional Information: please share more about your organization including the focus, size and location, and let us know how you plan to engage your members and network to support the cause of HBCU AwareFest</span></label>' + 
 '<input id="CustomTransactionField_985089" name="CustomTransactionField_985089" type="text" maxlength="255"></input>' + 
+'</div>' + 
+'<div class="field text CustomTransactionField_1000449 required" >' + 
+'<label for="CustomTransactionField_1000449"><span class="label">How did you hear about this event?</span><span class="required-star">*</span></label>' + 
+'<input id="CustomTransactionField_1000449" name="CustomTransactionField_1000449" class="required" type="text" maxlength="255"></input>' + 
 '</div>' + 
 '' + 
 '</div>' + 
@@ -1016,6 +1020,7 @@ Bloomerang.Data.PayPal.IsPayPalPaymentMethodVaultingEnabled = false;Bloomerang.D
                   auctionParticipation: getSelectText(".registration-form #CustomTransactionField_790529"),
                   auctionItems: getCheckboxSelections('CustomTransactionField_793601'),
                   additionalOrgInfo: val(".registration-form #CustomTransactionField_985089"),
+                  howDidYouHear: val(".registration-form #CustomTransactionField_1000449"),
                   comments: val(".registration-form #comment"),
                   timestamp: new Date().toLocaleString(),
                   registrationType: registrationTypeInput.data("short-name") || "",
