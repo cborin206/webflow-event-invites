@@ -610,6 +610,18 @@ var insertForm977920 = function() {
 '                              </a>' + 
 '</div>' + 
 '</div>' + 
+'<div class="field text CustomTransactionField_988161" >' + 
+'<label for="CustomTransactionField_988161">Please select your age range:</label>' + 
+'<select id="CustomTransactionField_988161" name="CustomTransactionField_988161"><option value=""></option>' + 
+'<option value="989185">18 to 24</option>' + 
+'<option value="990209">25 to 29</option>' + 
+'<option value="991233">30 to 35</option>' + 
+'<option value="992257">36 to 44</option>' + 
+'<option value="993281">45 to 54</option>' + 
+'<option value="994305">55 to 64</option>' + 
+'<option value="995329">65 or older</option>' + 
+'</select>' + 
+'</div>' + 
 '<div class="field text CustomTransactionField_789505 required" >' + 
 '<label for="CustomTransactionField_789505"><span class="label">Are you an HBCU graduate? If yes, indicate school.</span><span class="required-star">*</span></label>' + 
 '<input id="CustomTransactionField_789505" name="CustomTransactionField_789505" class="required" type="text" maxlength="255"></input>' + 
@@ -991,6 +1003,7 @@ Bloomerang.Data.PayPal.IsPayPalPaymentMethodVaultingEnabled = false;Bloomerang.D
                   zipCode: val(".registration-form #zip-code") || val(".registration-form #postal-code"),
                   professionalBackground: getCheckboxSelections('CustomTransactionField_804865'),
                   involvementLevel: getCheckboxSelections('CustomTransactionField_782337'),
+                  ageRange: getSelectText(".registration-form #CustomTransactionField_988161"),
                   hbcuGraduate: val(".registration-form #CustomTransactionField_789505"),
                   auctionParticipation: getSelectText(".registration-form #CustomTransactionField_790529"),
                   auctionItems: getCheckboxSelections('CustomTransactionField_793601'),
