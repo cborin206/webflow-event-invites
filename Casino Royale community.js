@@ -1,3 +1,4 @@
+
 var insertForm750592 = function() {
         var html750592 = '<style text=\'text/css\'>' + 
 '.registration-form label{color: #404040;' + 
