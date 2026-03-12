@@ -564,6 +564,10 @@ var insertForm977920 = function() {
 '                                <input type="checkbox" value="807937" onchange="jQuery(this).closest(\'.checkbox\').toggleClass(\'selected\')">' + 
 '                                <span class="text">City or State Official</span>' + 
 '                              </a>' + 
+'<a href="javascript:void(0)" class="checkbox" data-id="999425" onclick="var box = jQuery(this).children(\'input\'); box.prop(\'checked\', !box.prop(\'checked\'));jQuery(box).trigger(\'change\'); return false;">' + 
+'                                <input type="checkbox" value="999425" onchange="jQuery(this).closest(\'.checkbox\').toggleClass(\'selected\')">' + 
+'                                <span class="text">Community Partner</span>' + 
+'                              </a>' + 
 '<a href="javascript:void(0)" class="checkbox" data-id="806913" onclick="var box = jQuery(this).children(\'input\'); box.prop(\'checked\', !box.prop(\'checked\'));jQuery(box).trigger(\'change\'); return false;">' + 
 '                                <input type="checkbox" value="806913" onchange="jQuery(this).closest(\'.checkbox\').toggleClass(\'selected\')">' + 
 '                                <span class="text">C-Suite Leader</span>' + 
@@ -583,6 +587,10 @@ var insertForm977920 = function() {
 '<a href="javascript:void(0)" class="checkbox" data-id="808961" onclick="var box = jQuery(this).children(\'input\'); box.prop(\'checked\', !box.prop(\'checked\'));jQuery(box).trigger(\'change\'); return false;">' + 
 '                                <input type="checkbox" value="808961" onchange="jQuery(this).closest(\'.checkbox\').toggleClass(\'selected\')">' + 
 '                                <span class="text">Sponsor/Partner</span>' + 
+'                              </a>' + 
+'<a href="javascript:void(0)" class="checkbox" data-id="998401" onclick="var box = jQuery(this).children(\'input\'); box.prop(\'checked\', !box.prop(\'checked\'));jQuery(box).trigger(\'change\'); return false;">' + 
+'                                <input type="checkbox" value="998401" onchange="jQuery(this).closest(\'.checkbox\').toggleClass(\'selected\')">' + 
+'                                <span class="text">Young Professional</span>' + 
 '                              </a>' + 
 '</div>' + 
 '</div>' + 
