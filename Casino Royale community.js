@@ -558,36 +558,7 @@ var insertForm977920 = function() {
 '</div>' + 
 '    <div class="section custom-fields">' + 
 '      <h3>Additional Information</h3>' + 
-'      <div class="field text CustomTransactionField_761857 required" >' + 
-'<label for="CustomTransactionField_761857"><span class="label">Business Entity</span><span class="required-star">*</span></label>' + 
-'<input id="CustomTransactionField_761857" name="CustomTransactionField_761857" class="required" type="text" maxlength="255"></input>' + 
-'</div>' + 
-'<div class="field text CustomTransactionField_762881" >' + 
-'<label for="CustomTransactionField_762881"><span class="label">Years in Business</span></label>' + 
-'<input id="CustomTransactionField_762881" name="CustomTransactionField_762881" type="text" maxlength="255"></input>' + 
-'</div>' + 
-'<div class="field text CustomTransactionField_763905" >' + 
-'<label for="CustomTransactionField_763905">Number of Employees</label>' + 
-'<select id="CustomTransactionField_763905" name="CustomTransactionField_763905" style="display:none"><option value=""></option>' + 
-'<option value="768001">10,000+</option>' + 
-'<option value="765953">Greater than 1,000</option>' + 
-'<option value="766977">Greater than 5,000</option>' + 
-'<option value="828417">Greater than 100</option>' + 
-'<option value="836609">Greater than 250</option>' + 
-'<option value="764929">Greater than 500</option>' + 
-'<option value="835585">Less than 100</option>' + 
-'</select>' + 
-'<div class="custom-radio-group" data-target="CustomTransactionField_763905">' + 
-'<label class="custom-radio"><input type="radio" name="radio_763905" value="835585"><span>Less than 100</span></label>' + 
-'<label class="custom-radio"><input type="radio" name="radio_763905" value="828417"><span>Greater than 100</span></label>' + 
-'<label class="custom-radio"><input type="radio" name="radio_763905" value="836609"><span>Greater than 250</span></label>' + 
-'<label class="custom-radio"><input type="radio" name="radio_763905" value="764929"><span>Greater than 500</span></label>' + 
-'<label class="custom-radio"><input type="radio" name="radio_763905" value="765953"><span>Greater than 1,000</span></label>' + 
-'<label class="custom-radio"><input type="radio" name="radio_763905" value="766977"><span>Greater than 5,000</span></label>' + 
-'<label class="custom-radio"><input type="radio" name="radio_763905" value="768001"><span>10,000+</span></label>' + 
-'</div>' + 
-'</div>' + 
-'<div class="field text CustomTransactionField_804865 required" >' + 
+'      <div class="field text CustomTransactionField_804865 required" >' + 
 '<label for="CustomTransactionField_804865">Which best describes your professional background?<span class="required-star">*</span></label>' + 
 '<div id="CustomTransactionField_804865" class="checkboxes"><a href="javascript:void(0)" class="checkbox" data-id="807937" onclick="var box = jQuery(this).children(\'input\'); box.prop(\'checked\', !box.prop(\'checked\'));jQuery(box).trigger(\'change\'); return false;">' + 
 '                                <input type="checkbox" value="807937" onchange="jQuery(this).closest(\'.checkbox\').toggleClass(\'selected\')">' + 
@@ -673,6 +644,10 @@ var insertForm977920 = function() {
 '                                <span class="text">Trips/Experiences</span>' + 
 '                              </a>' + 
 '</div>' + 
+'</div>' + 
+'<div class="field text CustomTransactionField_985089" >' + 
+'<label for="CustomTransactionField_985089"><span class="label">Additional Information: please share more about your organization including the focus, size and location, and let us know how you plan to engage your members and network to support the cause of HBCU AwareFest</span></label>' + 
+'<input id="CustomTransactionField_985089" name="CustomTransactionField_985089" type="text" maxlength="255"></input>' + 
 '</div>' + 
 '' + 
 '</div>' + 
@@ -1014,14 +989,12 @@ Bloomerang.Data.PayPal.IsPayPalPaymentMethodVaultingEnabled = false;Bloomerang.D
                   city: val(".registration-form #city"),
                   state: getSelectText(".registration-form #state") || getSelectText(".registration-form #province"),
                   zipCode: val(".registration-form #zip-code") || val(".registration-form #postal-code"),
-                  entity: val(".registration-form #CustomTransactionField_761857"),
-                  yearsInBusiness: val(".registration-form #CustomTransactionField_762881"),
-                  numberOfEmployees: getSelectText(".registration-form #CustomTransactionField_763905"),
                   professionalBackground: getCheckboxSelections('CustomTransactionField_804865'),
                   involvementLevel: getCheckboxSelections('CustomTransactionField_782337'),
                   hbcuGraduate: val(".registration-form #CustomTransactionField_789505"),
                   auctionParticipation: getSelectText(".registration-form #CustomTransactionField_790529"),
                   auctionItems: getCheckboxSelections('CustomTransactionField_793601'),
+                  additionalOrgInfo: val(".registration-form #CustomTransactionField_985089"),
                   comments: val(".registration-form #comment"),
                   timestamp: new Date().toLocaleString(),
                   registrationType: registrationTypeInput.data("short-name") || "",
