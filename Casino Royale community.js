@@ -1,5 +1,5 @@
-var insertForm977920 = function() {
-        var html977920 = '<style text=\'text/css\'>' + 
+var insertForm750592 = function() {
+        var html750592 = '<style text=\'text/css\'>' + 
 '.registration-form label{color: #404040;' + 
 '                display: block;}' + 
 '' + 
@@ -130,12 +130,12 @@ var insertForm977920 = function() {
 '  <form id="registration-form" class="registration-form" method="post" onsubmit="event.preventDefault(); collectPayment();">' + 
 '    <div class="errors hidden"></div>' + 
 '    <div class="section registrationType">' + 
-'      <h3 style="display:none">Casino Royale Fundraiser - Community Partner Registration</h3>' + 
-'      <div class="field radio 980992 required" >' + 
-'<label for="980992"><input id="980992" name="registration-type" class="required" type="radio" value="250.000000" maxlength="255" data-short-name="Young Professionals (35 and under)" data-ticket-quantity="1" data-registration-type-value="976897" data-non-deductible-amount="0.000000"></input><span class="label">$250.00 - Young Professionals (35 and under)</span></label>' + 
+'      <h3 style="display:none">Casino Royale Fundraiser Registration</h3>' + 
+'      <div class="field radio 752640 required" >' + 
+'<label for="752640"><input id="752640" name="registration-type" class="required" type="radio" value="750.000000" maxlength="255" data-short-name="Individual Donation" data-ticket-quantity="1" data-registration-type-value="749569" data-non-deductible-amount="0.000000"></input><span class="label">$750.00 - Individual Donation</span></label>' + 
 '</div>' + 
-'<div class="field radio 980993 required" >' + 
-'<label for="980993"><input id="980993" name="registration-type" class="required" type="radio" value="500.000000" maxlength="255" data-short-name="Representatives of organizations" data-ticket-quantity="1" data-registration-type-value="976898" data-non-deductible-amount="0.000000"></input><span class="label">$500.00 - Representatives of organizations</span></label>' + 
+'<div class="field radio 752641 required" >' + 
+'<label for="752641"><input id="752641" name="registration-type" class="required" type="radio" value="1250.000000" maxlength="255" data-short-name="Couples Donation" data-ticket-quantity="2" data-registration-type-value="749570" data-non-deductible-amount="0.000000"></input><span class="label">$1,250.00 - Couples Donation</span></label>' + 
 '</div>' + 
 '<div class="field radio cannot-attend required" >' + 
 '<label for="cannot-attend"><input id="cannot-attend" name="registration-type" class="required" type="radio" maxlength="255" data-short-name="Donation" data-registration-type-value="749571"></input><span class="label">Sorry, I can\'t attend, but I would like to show my support by making a donation</span></label>' + 
@@ -558,36 +558,7 @@ var insertForm977920 = function() {
 '</div>' + 
 '    <div class="section custom-fields">' + 
 '      <h3>Additional Information</h3>' + 
-'      <div class="field text CustomTransactionField_761857 required" >' + 
-'<label for="CustomTransactionField_761857"><span class="label">Business Entity</span><span class="required-star">*</span></label>' + 
-'<input id="CustomTransactionField_761857" name="CustomTransactionField_761857" class="required" type="text" maxlength="255"></input>' + 
-'</div>' + 
-'<div class="field text CustomTransactionField_762881" >' + 
-'<label for="CustomTransactionField_762881"><span class="label">Years in Business</span></label>' + 
-'<input id="CustomTransactionField_762881" name="CustomTransactionField_762881" type="text" maxlength="255"></input>' + 
-'</div>' + 
-'<div class="field text CustomTransactionField_763905" >' + 
-'<label for="CustomTransactionField_763905">Number of Employees</label>' + 
-'<select id="CustomTransactionField_763905" name="CustomTransactionField_763905" style="display:none"><option value=""></option>' + 
-'<option value="768001">10,000+</option>' + 
-'<option value="765953">Greater than 1,000</option>' + 
-'<option value="766977">Greater than 5,000</option>' + 
-'<option value="828417">Greater than 100</option>' + 
-'<option value="836609">Greater than 250</option>' + 
-'<option value="764929">Greater than 500</option>' + 
-'<option value="835585">Less than 100</option>' + 
-'</select>' + 
-'<div class="custom-radio-group" data-target="CustomTransactionField_763905">' + 
-'<label class="custom-radio"><input type="radio" name="radio_763905" value="835585"><span>Less than 100</span></label>' + 
-'<label class="custom-radio"><input type="radio" name="radio_763905" value="828417"><span>Greater than 100</span></label>' + 
-'<label class="custom-radio"><input type="radio" name="radio_763905" value="836609"><span>Greater than 250</span></label>' + 
-'<label class="custom-radio"><input type="radio" name="radio_763905" value="764929"><span>Greater than 500</span></label>' + 
-'<label class="custom-radio"><input type="radio" name="radio_763905" value="765953"><span>Greater than 1,000</span></label>' + 
-'<label class="custom-radio"><input type="radio" name="radio_763905" value="766977"><span>Greater than 5,000</span></label>' + 
-'<label class="custom-radio"><input type="radio" name="radio_763905" value="768001"><span>10,000+</span></label>' + 
-'</div>' + 
-'</div>' + 
-'<div class="field text CustomTransactionField_804865 required" >' + 
+'      <div class="field text CustomTransactionField_804865 required" >' + 
 '<label for="CustomTransactionField_804865">Which best describes your professional background?<span class="required-star">*</span></label>' + 
 '<div id="CustomTransactionField_804865" class="checkboxes"><a href="javascript:void(0)" class="checkbox" data-id="807937" onclick="var box = jQuery(this).children(\'input\'); box.prop(\'checked\', !box.prop(\'checked\'));jQuery(box).trigger(\'change\'); return false;">' + 
 '                                <input type="checkbox" value="807937" onchange="jQuery(this).closest(\'.checkbox\').toggleClass(\'selected\')">' + 
@@ -612,6 +583,22 @@ var insertForm977920 = function() {
 '<a href="javascript:void(0)" class="checkbox" data-id="808961" onclick="var box = jQuery(this).children(\'input\'); box.prop(\'checked\', !box.prop(\'checked\'));jQuery(box).trigger(\'change\'); return false;">' + 
 '                                <input type="checkbox" value="808961" onchange="jQuery(this).closest(\'.checkbox\').toggleClass(\'selected\')">' + 
 '                                <span class="text">Sponsor/Partner</span>' + 
+'                              </a>' + 
+'</div>' + 
+'</div>' + 
+'<div class="field text CustomTransactionField_777217 required" >' + 
+'<label for="CustomTransactionField_777217">What prompted your interest in this event?<span class="required-star">*</span></label>' + 
+'<div id="CustomTransactionField_777217" class="checkboxes"><a href="javascript:void(0)" class="checkbox" data-id="778241" onclick="var box = jQuery(this).children(\'input\'); box.prop(\'checked\', !box.prop(\'checked\'));jQuery(box).trigger(\'change\'); return false;">' + 
+'                                <input type="checkbox" value="778241" onchange="jQuery(this).closest(\'.checkbox\').toggleClass(\'selected\')">' + 
+'                                <span class="text">Existing SFI Supporter</span>' + 
+'                              </a>' + 
+'<a href="javascript:void(0)" class="checkbox" data-id="779265" onclick="var box = jQuery(this).children(\'input\'); box.prop(\'checked\', !box.prop(\'checked\'));jQuery(box).trigger(\'change\'); return false;">' + 
+'                                <input type="checkbox" value="779265" onchange="jQuery(this).closest(\'.checkbox\').toggleClass(\'selected\')">' + 
+'                                <span class="text">Expanding Philanthropic Involvement</span>' + 
+'                              </a>' + 
+'<a href="javascript:void(0)" class="checkbox" data-id="781313" onclick="var box = jQuery(this).children(\'input\'); box.prop(\'checked\', !box.prop(\'checked\'));jQuery(box).trigger(\'change\'); return false;">' + 
+'                                <input type="checkbox" value="781313" onchange="jQuery(this).closest(\'.checkbox\').toggleClass(\'selected\')">' + 
+'                                <span class="text">Invitation from a colleague or friend</span>' + 
 '                              </a>' + 
 '</div>' + 
 '</div>' + 
@@ -674,6 +661,14 @@ var insertForm977920 = function() {
 '                              </a>' + 
 '</div>' + 
 '</div>' + 
+'<div class="field text CustomTransactionField_826369" >' + 
+'<label for="CustomTransactionField_826369"><span class="label">For Couples Donations, please enter your guests\' info below (Name, Email, Phone Number):</span></label>' + 
+'<input id="CustomTransactionField_826369" name="CustomTransactionField_826369" type="text" maxlength="255"></input>' + 
+'</div>' + 
+'<div class="field text CustomTransactionField_985089" >' + 
+'<label for="CustomTransactionField_985089"><span class="label">Additional Information: please share more about your organization including the focus, size and location, and let us know how you plan to engage your members and network to support the cause of HBCU AwareFest</span></label>' + 
+'<input id="CustomTransactionField_985089" name="CustomTransactionField_985089" type="text" maxlength="255"></input>' + 
+'</div>' + 
 '' + 
 '</div>' + 
 '    <div class="section comment" style="display:none">' + 
@@ -699,7 +694,7 @@ var insertForm977920 = function() {
 '' + 
 '</div>' + 
 '    <div class="section captcha">' + 
-'      <label id=\'noCaptchaResponseError\' class=\'error noCaptchaResponseError\' style=\'display: none\'>You must fill out the CAPTCHA</label><div id="captcha977920"></div>' + 
+'      <label id=\'noCaptchaResponseError\' class=\'error noCaptchaResponseError\' style=\'display: none\'>You must fill out the CAPTCHA</label><div id="captcha750592"></div>' + 
 '' + 
 '</div>' + 
 '    <div class="section payment">' + 
@@ -725,21 +720,21 @@ var insertForm977920 = function() {
 '  <h2>Processing...</h2><p>Your transaction is being processed. Please do not close your browser or leave this page.</p>' + 
 '</div>' + 
 '' + 
-'' +  '';var successHtml977920 = '<div class=\'donation-success\'>' +
+'' +  '';var successHtml750592 = '<div class=\'donation-success\'>' +
                                                        '  <h2>Thank You for Your Registration!</h2>' +
                                                        '  <p>Thank you for your donation in support of the work of the Student Freedom Initiative. Your support will help us increase the social and economic mobility of students of color, providing them catalysts for freedom in individual career and life choices. On behalf of our board, staff and student beneficiaries, we thank you very much</p>' + 
                                                         '   \u003cdiv class=\"additional-tickets\" style=\"margin-top: 10px;\"\u003e\u003cbutton type=\"button\" onclick=\"javascript:location.reload()\"\u003ePurchase Additional Tickets\u003c/button\u003e\u003c/div\u003e' + 
-                                                        '</div>';( function($) {if (Bloomerang.useDonationId('977920')) { 
+                                                        '</div>';( function($) {if (Bloomerang.useDonationId('750592')) { 
                                 Bloomerang.useProcessor('13313', 'Stripe', 'pk_live_51Ha9bqHpWuT9ujWsoE8cJruzrkhtByX1MM2LLniGsl4Mi0wFUV76xstVN1TAcy62Ve6p0IoJxEFmhJaDRkdHUtzm00dAzaicPA');
                             } else {
-                                html977920 = '<p style="color: red">Only one donation or event registration form can be used on each page.</p>';
-                            }if (jQuery('#bloomerangForm977920').length) {
+                                html750592 = '<p style="color: red">Only one donation or event registration form can be used on each page.</p>';
+                            }if (jQuery('#bloomerangForm750592').length) {
                         
                     if (window.ActiveXObject) { // they are using IE < 11, which doesn't support TLS 1.1
-                        html977920 = '<p style="color: red">Your browser does not support the minimum security requirements for keeping your Credit Card information safe when processing payments. Please upgrade your browser or download the latest version of' + 
+                        html750592 = '<p style="color: red">Your browser does not support the minimum security requirements for keeping your Credit Card information safe when processing payments. Please upgrade your browser or download the latest version of' + 
                         ' <a target=\'_blank\' href=\'https://www.google.com/chrome/browser/desktop/\'>Chrome</a> or <a target=\'_blank\' href=\'https://www.mozilla.org/en-US/firefox/new/\'>Firefox</a>.</p>';
                     }
-                        jQuery('#bloomerangForm977920').after(html977920);
+                        jQuery('#bloomerangForm750592').after(html750592);
                         
                          Bloomerang.Util.requireStripe(function() {
                                         Bloomerang.Util.Stripe = Stripe('pk_live_51Ha9bqHpWuT9ujWsoE8cJruzrkhtByX1MM2LLniGsl4Mi0wFUV76xstVN1TAcy62Ve6p0IoJxEFmhJaDRkdHUtzm00dAzaicPA'); 
@@ -854,7 +849,7 @@ Bloomerang.Data.PayPal.IsPayPalPaymentMethodVaultingEnabled = false;Bloomerang.D
                                 function() { return Bloomerang.gRecaptchaLoaded; },
                                 function() {
                                     jQuery('.section.captcha').removeAttr('style');
-                                    jQuery('form.registration-form').data('captcha-id', grecaptcha.render('captcha977920', { 'sitekey' : '6Ld8kg8sAAAAAP8ECpMcXxW103rW_nvbr7EoDQrz' }));
+                                    jQuery('form.registration-form').data('captcha-id', grecaptcha.render('captcha750592', { 'sitekey' : '6Ld8kg8sAAAAAP8ECpMcXxW103rW_nvbr7EoDQrz' }));
                                     
                                     if((Bloomerang.donationFormReCaptchaV3Flag && Bloomerang.isBloomerangHostedForm && Bloomerang.isDonationForm) || (Bloomerang.donationFormReCaptchaV3SelfHostedFlag && !Bloomerang.isBloomerangHostedForm && Bloomerang.reCaptchaV3SiteKey && Bloomerang.isDonationForm)) {
                                         jQuery('.section.captcha').attr('style', 'display: none');
@@ -1014,14 +1009,14 @@ Bloomerang.Data.PayPal.IsPayPalPaymentMethodVaultingEnabled = false;Bloomerang.D
                   city: val(".registration-form #city"),
                   state: getSelectText(".registration-form #state") || getSelectText(".registration-form #province"),
                   zipCode: val(".registration-form #zip-code") || val(".registration-form #postal-code"),
-                  entity: val(".registration-form #CustomTransactionField_761857"),
-                  yearsInBusiness: val(".registration-form #CustomTransactionField_762881"),
-                  numberOfEmployees: getSelectText(".registration-form #CustomTransactionField_763905"),
                   professionalBackground: getCheckboxSelections('CustomTransactionField_804865'),
+                  interestPrompt: getCheckboxSelections('CustomTransactionField_777217'),
                   involvementLevel: getCheckboxSelections('CustomTransactionField_782337'),
                   hbcuGraduate: val(".registration-form #CustomTransactionField_789505"),
                   auctionParticipation: getSelectText(".registration-form #CustomTransactionField_790529"),
                   auctionItems: getCheckboxSelections('CustomTransactionField_793601'),
+                  guestInfo: val(".registration-form #CustomTransactionField_826369"),
+                  additionalOrgInfo: val(".registration-form #CustomTransactionField_985089"),
                   comments: val(".registration-form #comment"),
                   timestamp: new Date().toLocaleString(),
                   registrationType: registrationTypeInput.data("short-name") || "",
@@ -1066,7 +1061,7 @@ Bloomerang.Data.PayPal.IsPayPalPaymentMethodVaultingEnabled = false;Bloomerang.D
             jQuery("#registration-processing-container").hide();
             var formContainer = jQuery("#registration-form-container");
             formContainer.show();
-            formContainer.html(successHtml977920);
+            formContainer.html(successHtml750592);
             Bloomerang.scrollToElement(formContainer);
         };
         Bloomerang.Api.OnError = Bloomerang.Widget.Donation.OnError = function (response) {
@@ -1456,10 +1451,10 @@ Bloomerang.Data.PayPal.IsPayPalPaymentMethodVaultingEnabled = false;Bloomerang.D
                         script.type = 'text/javascript';
                         script.src = 'https://crm.bloomerang.co/Content/Scripts/Api/Bloomerang-v2.js?nocache=1770166697';
                         document.getElementsByTagName('head')[0].appendChild(script);
-                        waitForBloomerangLoad(function() { Bloomerang.Util.requireJQueryValidationAndStripe(function() { insertForm977920(); })});
+                        waitForBloomerangLoad(function() { Bloomerang.Util.requireJQueryValidationAndStripe(function() { insertForm750592(); })});
                     }
                     else {
-                        waitForBloomerangLoad(function() { Bloomerang.Util.requireJQueryValidationAndStripe(function() { insertForm977920(); })});
+                        waitForBloomerangLoad(function() { Bloomerang.Util.requireJQueryValidationAndStripe(function() { insertForm750592(); })});
                     }
                 };
 
@@ -1480,15 +1475,15 @@ Bloomerang.Data.PayPal.IsPayPalPaymentMethodVaultingEnabled = false;Bloomerang.D
 
                 startBloomerangLoad();
 
-// === CASINO ROYALE COMMUNITY PARTNER FROSTED GLASS THEME ===
+// === CASINO ROYALE FROSTED GLASS THEME ===
 (function() {
   function applyTheme() {
     // Remove any previous injection
-    var old = document.getElementById('casino-royale-community-theme');
+    var old = document.getElementById('casino-royale-theme');
     if (old) old.remove();
 
     var css = document.createElement('style');
-    css.id = 'casino-royale-community-theme';
+    css.id = 'casino-royale-theme';
     css.textContent = [
 
       // ========== TRANSPARENT BACKGROUNDS ==========
