@@ -135,7 +135,7 @@ var insertForm977920 = function() {
 '<label for="980992"><input id="980992" name="registration-type" class="required" type="radio" value="250.000000" maxlength="255" data-short-name="Young Professionals (35 and under)" data-ticket-quantity="1" data-registration-type-value="976897" data-non-deductible-amount="0.000000"></input><span class="label">$250.00 - Young Professionals (35 and under)</span></label>' + 
 '</div>' + 
 '<div class="field radio 980993 required" >' + 
-'<label for="980993"><input id="980993" name="registration-type" class="required" type="radio" value="500.000000" maxlength="255" data-short-name="Representatives of organizations" data-ticket-quantity="1" data-registration-type-value="976898" data-non-deductible-amount="0.000000"></input><span class="label">$500.00 - Representatives of organizations</span></label>' + 
+'<label for="980993"><input id="980993" name="registration-type" class="required" type="radio" value="500.000000" maxlength="255" data-short-name="Representatives of Community Partners" data-ticket-quantity="1" data-registration-type-value="976898" data-non-deductible-amount="0.000000"></input><span class="label">$500.00 - Representatives of Community Partners</span></label>' + 
 '</div>' + 
 '<div class="field radio cannot-attend required" >' + 
 '<label for="cannot-attend"><input id="cannot-attend" name="registration-type" class="required" type="radio" maxlength="255" data-short-name="Donation" data-registration-type-value="749571"></input><span class="label">Sorry, I can\'t attend, but I would like to show my support by making a donation</span></label>' + 
