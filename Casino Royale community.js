@@ -558,67 +558,7 @@ var insertForm977920 = function() {
 '</div>' + 
 '    <div class="section custom-fields">' + 
 '      <h3>Additional Information</h3>' + 
-'      <div class="field text CustomTransactionField_804865 required" >' + 
-'<label for="CustomTransactionField_804865">Which best describes your professional background?<span class="required-star">*</span></label>' + 
-'<div id="CustomTransactionField_804865" class="checkboxes"><a href="javascript:void(0)" class="checkbox" data-id="807937" onclick="var box = jQuery(this).children(\'input\'); box.prop(\'checked\', !box.prop(\'checked\'));jQuery(box).trigger(\'change\'); return false;">' + 
-'                                <input type="checkbox" value="807937" onchange="jQuery(this).closest(\'.checkbox\').toggleClass(\'selected\')">' + 
-'                                <span class="text">City or State Official</span>' + 
-'                              </a>' + 
-'<a href="javascript:void(0)" class="checkbox" data-id="999425" onclick="var box = jQuery(this).children(\'input\'); box.prop(\'checked\', !box.prop(\'checked\'));jQuery(box).trigger(\'change\'); return false;">' + 
-'                                <input type="checkbox" value="999425" onchange="jQuery(this).closest(\'.checkbox\').toggleClass(\'selected\')">' + 
-'                                <span class="text">Community Partner</span>' + 
-'                              </a>' + 
-'<a href="javascript:void(0)" class="checkbox" data-id="806913" onclick="var box = jQuery(this).children(\'input\'); box.prop(\'checked\', !box.prop(\'checked\'));jQuery(box).trigger(\'change\'); return false;">' + 
-'                                <input type="checkbox" value="806913" onchange="jQuery(this).closest(\'.checkbox\').toggleClass(\'selected\')">' + 
-'                                <span class="text">C-Suite Leader</span>' + 
-'                              </a>' + 
-'<a href="javascript:void(0)" class="checkbox" data-id="809985" onclick="var box = jQuery(this).children(\'input\'); box.prop(\'checked\', !box.prop(\'checked\'));jQuery(box).trigger(\'change\'); return false;">' + 
-'                                <input type="checkbox" value="809985" onchange="jQuery(this).closest(\'.checkbox\').toggleClass(\'selected\')">' + 
-'                                <span class="text">Entrepreneur</span>' + 
-'                              </a>' + 
-'<a href="javascript:void(0)" class="checkbox" data-id="811009" onclick="var box = jQuery(this).children(\'input\'); box.prop(\'checked\', !box.prop(\'checked\'));jQuery(box).trigger(\'change\'); return false;">' + 
-'                                <input type="checkbox" value="811009" onchange="jQuery(this).closest(\'.checkbox\').toggleClass(\'selected\')">' + 
-'                                <span class="text">Other</span>' + 
-'                              </a>' + 
-'<a href="javascript:void(0)" class="checkbox" data-id="805889" onclick="var box = jQuery(this).children(\'input\'); box.prop(\'checked\', !box.prop(\'checked\'));jQuery(box).trigger(\'change\'); return false;">' + 
-'                                <input type="checkbox" value="805889" onchange="jQuery(this).closest(\'.checkbox\').toggleClass(\'selected\')">' + 
-'                                <span class="text">Philanthropist</span>' + 
-'                              </a>' + 
-'<a href="javascript:void(0)" class="checkbox" data-id="808961" onclick="var box = jQuery(this).children(\'input\'); box.prop(\'checked\', !box.prop(\'checked\'));jQuery(box).trigger(\'change\'); return false;">' + 
-'                                <input type="checkbox" value="808961" onchange="jQuery(this).closest(\'.checkbox\').toggleClass(\'selected\')">' + 
-'                                <span class="text">Sponsor/Partner</span>' + 
-'                              </a>' + 
-'<a href="javascript:void(0)" class="checkbox" data-id="998401" onclick="var box = jQuery(this).children(\'input\'); box.prop(\'checked\', !box.prop(\'checked\'));jQuery(box).trigger(\'change\'); return false;">' + 
-'                                <input type="checkbox" value="998401" onchange="jQuery(this).closest(\'.checkbox\').toggleClass(\'selected\')">' + 
-'                                <span class="text">Young Professional</span>' + 
-'                              </a>' + 
-'</div>' + 
-'</div>' + 
-'<div class="field text CustomTransactionField_782337 required" >' + 
-'<label for="CustomTransactionField_782337">Which level of involvement with Student Freedom Initiative are you most interested in exploring?<span class="required-star">*</span></label>' + 
-'<div id="CustomTransactionField_782337" class="checkboxes"><a href="javascript:void(0)" class="checkbox" data-id="787457" onclick="var box = jQuery(this).children(\'input\'); box.prop(\'checked\', !box.prop(\'checked\'));jQuery(box).trigger(\'change\'); return false;">' + 
-'                                <input type="checkbox" value="787457" onchange="jQuery(this).closest(\'.checkbox\').toggleClass(\'selected\')">' + 
-'                                <span class="text">Existing SFI Supporter</span>' + 
-'                              </a>' + 
-'<a href="javascript:void(0)" class="checkbox" data-id="784385" onclick="var box = jQuery(this).children(\'input\'); box.prop(\'checked\', !box.prop(\'checked\'));jQuery(box).trigger(\'change\'); return false;">' + 
-'                                <input type="checkbox" value="784385" onchange="jQuery(this).closest(\'.checkbox\').toggleClass(\'selected\')">' + 
-'                                <span class="text">Learning more about the mission</span>' + 
-'                              </a>' + 
-'<a href="javascript:void(0)" class="checkbox" data-id="783361" onclick="var box = jQuery(this).children(\'input\'); box.prop(\'checked\', !box.prop(\'checked\'));jQuery(box).trigger(\'change\'); return false;">' + 
-'                                <input type="checkbox" value="783361" onchange="jQuery(this).closest(\'.checkbox\').toggleClass(\'selected\')">' + 
-'                                <span class="text">Making a meaningful one-time contribution</span>' + 
-'                              </a>' + 
-'<a href="javascript:void(0)" class="checkbox" data-id="785409" onclick="var box = jQuery(this).children(\'input\'); box.prop(\'checked\', !box.prop(\'checked\'));jQuery(box).trigger(\'change\'); return false;">' + 
-'                                <input type="checkbox" value="785409" onchange="jQuery(this).closest(\'.checkbox\').toggleClass(\'selected\')">' + 
-'                                <span class="text">Ongoing or leadership-level support</span>' + 
-'                              </a>' + 
-'<a href="javascript:void(0)" class="checkbox" data-id="786433" onclick="var box = jQuery(this).children(\'input\'); box.prop(\'checked\', !box.prop(\'checked\'));jQuery(box).trigger(\'change\'); return false;">' + 
-'                                <input type="checkbox" value="786433" onchange="jQuery(this).closest(\'.checkbox\').toggleClass(\'selected\')">' + 
-'                                <span class="text">Sponsorship Opportunities</span>' + 
-'                              </a>' + 
-'</div>' + 
-'</div>' + 
-'<div class="field text CustomTransactionField_988161 required" >' + 
+'      <div class="field text CustomTransactionField_988161 required" >' + 
 '<label for="CustomTransactionField_988161">Please select your age range:<span class="required-star">*</span></label>' + 
 '<select id="CustomTransactionField_988161" name="CustomTransactionField_988161" class="required"><option value=""></option>' + 
 '<option value="989185">18 to 24</option>' + 
@@ -630,10 +570,6 @@ var insertForm977920 = function() {
 '<option value="995329">65 or older</option>' + 
 '</select>' + 
 '</div>' + 
-'<div class="field text CustomTransactionField_789505 required" >' + 
-'<label for="CustomTransactionField_789505"><span class="label">Are you an HBCU graduate? If yes, indicate school.</span><span class="required-star">*</span></label>' + 
-'<input id="CustomTransactionField_789505" name="CustomTransactionField_789505" class="required" type="text" maxlength="255"></input>' + 
-'</div>' + 
 '<div class="field text CustomTransactionField_790529 required" >' + 
 '<label for="CustomTransactionField_790529">Do you plan to participate in the Silent and Live Auction?<span class="required-star">*</span></label>' + 
 '<select id="CustomTransactionField_790529" name="CustomTransactionField_790529" class="required" style="display:none"><option value=""></option>' + 
@@ -642,7 +578,7 @@ var insertForm977920 = function() {
 '</select>' + 
 '<div class="custom-radio-group" data-target="CustomTransactionField_790529">' + 
 '<label class="custom-radio"><input type="radio" name="radio_790529" value="791553" class="required"><span>Yes</span></label>' + 
-'<label class="custom-radio"><input type="radio" name="radio_790529" value="792577" class="required"><span>No</span></label>' + 
+'<label class="custom-radio"><input type="radio" name="radio_790529" value="792577"><span>No</span></label>' + 
 '</div>' + 
 '</div>' + 
 '<div class="field text CustomTransactionField_793601 required" >' + 
@@ -668,10 +604,6 @@ var insertForm977920 = function() {
 '<div class="field text CustomTransactionField_985089" >' + 
 '<label for="CustomTransactionField_985089"><span class="label">Additional Information: please share more about your organization including the focus, size and location, and let us know how you plan to engage your members and network to support the cause of HBCU AwareFest</span></label>' + 
 '<input id="CustomTransactionField_985089" name="CustomTransactionField_985089" type="text" maxlength="255"></input>' + 
-'</div>' + 
-'<div class="field text CustomTransactionField_1000449 required" >' + 
-'<label for="CustomTransactionField_1000449"><span class="label">How did you hear about this event?</span><span class="required-star">*</span></label>' + 
-'<input id="CustomTransactionField_1000449" name="CustomTransactionField_1000449" class="required" type="text" maxlength="255"></input>' + 
 '</div>' + 
 '' + 
 '</div>' + 
@@ -1013,14 +945,10 @@ Bloomerang.Data.PayPal.IsPayPalPaymentMethodVaultingEnabled = false;Bloomerang.D
                   city: val(".registration-form #city"),
                   state: getSelectText(".registration-form #state") || getSelectText(".registration-form #province"),
                   zipCode: val(".registration-form #zip-code") || val(".registration-form #postal-code"),
-                  professionalBackground: getCheckboxSelections('CustomTransactionField_804865'),
-                  involvementLevel: getCheckboxSelections('CustomTransactionField_782337'),
                   ageRange: getSelectText(".registration-form #CustomTransactionField_988161"),
-                  hbcuGraduate: val(".registration-form #CustomTransactionField_789505"),
                   auctionParticipation: getSelectText(".registration-form #CustomTransactionField_790529"),
                   auctionItems: getCheckboxSelections('CustomTransactionField_793601'),
                   additionalOrgInfo: val(".registration-form #CustomTransactionField_985089"),
-                  howDidYouHear: val(".registration-form #CustomTransactionField_1000449"),
                   comments: val(".registration-form #comment"),
                   timestamp: new Date().toLocaleString(),
                   registrationType: registrationTypeInput.data("short-name") || "",
