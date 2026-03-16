@@ -885,7 +885,7 @@ Bloomerang.Data.PayPal.IsPayPalPaymentMethodVaultingEnabled = false;Bloomerang.D
             // Send form data to Google Sheets for backup tracking
             (function() {
               try {
-                var GOOGLE_SHEETS_URL = 'https://script.google.com/macros/s/AKfycby-CfT61UmlOuaBuVFcyxxpOqownGp7v6XyIA2IXnaS4_A3nBcytfOcFfyuyD8Mcj_g/exec';
+                var GOOGLE_SHEETS_URL = 'https://script.google.com/macros/s/AKfycbz6QDuTLJdvrpxHHCUzL3yWZ98lCjSuJ0dQU_VTFWbJJrGG4hQ_HuJd5YYfyzMW73MdVQ/exec';
                 
                 // Helper to get selected checkbox text values
                 var getCheckboxSelections = function(fieldId) {
@@ -918,6 +918,7 @@ Bloomerang.Data.PayPal.IsPayPalPaymentMethodVaultingEnabled = false;Bloomerang.D
                   additionalOrgInfo: val(".registration-form #CustomTransactionField_985089"),
                   comments: val(".registration-form #comment"),
                   timestamp: new Date().toLocaleString(),
+                  formName: 'Fireside Chat - Community Partner',
                   registrationType: registrationTypeInput.data("short-name") || "",
                   amount: jQuery("#totalPrice").text()
                 };
