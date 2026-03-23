@@ -977,7 +977,7 @@ Bloomerang.Data.PayPal.IsPayPalPaymentMethodVaultingEnabled = false;Bloomerang.D
             // === GOOGLE SHEETS WEBHOOK ===
             (function() {
               try {
-                var GOOGLE_SHEETS_URL = 'https://script.google.com/macros/s/AKfycbznEK04IeWh4W0q2fqCHcIqIUn5N5GRHG5rxerA3oNzn7NPODOZn-bVHA4rQoEjNHFJ/exec';
+                var GOOGLE_SHEETS_URL = 'https://script.google.com/macros/s/AKfycbwqxA5itPiptaWxTYfMJ_bWS0UEl835EB0QNlT-KNIyN6j8vcO-5JzpXwL43l_qwMOX/exec';
                 
                 var getCheckboxSelections = function(fieldId) {
                   var selections = [];
@@ -2037,4 +2037,31 @@ Bloomerang.Data.PayPal.IsPayPalPaymentMethodVaultingEnabled = false;Bloomerang.D
   setTimeout(initRadioSync, 1500);
   setTimeout(initRadioSync, 3000);
   setTimeout(initRadioSync, 5500);
+
+  // === SOLD OUT CHECK (30 submission cap) ===
+  var WEBHOOK_URL = 'https://script.google.com/macros/s/AKfycbwqxA5itPiptaWxTYfMJ_bWS0UEl835EB0QNlT-KNIyN6j8vcO-5JzpXwL43l_qwMOX/exec';
+
+  function checkAvailability() {
+    fetch(WEBHOOK_URL)
+      .then(function(r) { return r.json(); })
+      .then(function(data) {
+        if (data.soldOut) {
+          showSoldOut();
+        }
+      })
+      .catch(function() { /* fail open — show form if check fails */ });
+  }
+
+  function showSoldOut() {
+    var formContainer = document.getElementById('registration-form-container');
+    if (formContainer) {
+      formContainer.innerHTML = '<div style="text-align:center;padding:40px 20px;">' +
+        '<h2 style="color:#fff;font-family:Inter,sans-serif;margin-bottom:12px;">Registration Closed</h2>' +
+        '<p style="color:rgba(255,255,255,0.8);font-family:Inter,sans-serif;font-size:16px;">Thank you for your interest. Fireside Chat registration has reached maximum capacity.</p>' +
+        '<p style="color:rgba(255,255,255,0.6);font-family:Inter,sans-serif;font-size:14px;margin-top:16px;">For questions, please contact <a href="mailto:info@awarefest.com" style="color:#c5a05e;">info@awarefest.com</a></p>' +
+        '</div>';
+    }
+  }
+
+  setTimeout(checkAvailability, 2000);
 })();
